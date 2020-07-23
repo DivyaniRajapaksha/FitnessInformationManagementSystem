@@ -364,18 +364,18 @@
      <div class="container">
         <div class="content">
             <div class="box form wow slideInLeft">
-               <form>
-                  <input type="text" placeholder="Enter Name">
-                  <input type="text" placeholder="Enter Email">
-				  <input type="text" placeholder="Enter Mobile">
-				  <select name="packages1" id="packages1">
+               <form action="customerRequest.php" method="post">
+                  <input type="text" placeholder="Enter Name" name="name">
+                  <input type="text" placeholder="Enter Email" name="email">
+				  <input type="text" placeholder="Enter Mobile" name="mobile">
+				  <select name="package">
 				  <option style="color:gray" value="null" disabled selected>Select Your Plan</option>
   					<option value="Monthly">Monthly Plan</option>
  					<option value="Three">Three Months Plan </option>
   					<option value="Six">Six Months Plan</option>
   					<option value="Annual">Annual Plan</option>
 				</select>
-                  <textarea placeholder="Enter Message If you have Any"></textarea>
+                  <textarea placeholder="Enter Message If you have Any" name="message"></textarea>
                   <button type="submit">Send Message</button>
                </form>
             </div>
