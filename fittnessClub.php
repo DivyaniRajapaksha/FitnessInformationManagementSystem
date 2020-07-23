@@ -367,8 +367,15 @@
                <form>
                   <input type="text" placeholder="Enter Name">
                   <input type="text" placeholder="Enter Email">
-                  <input type="text" placeholder="Enter Mobile">
-                  <textarea placeholder="Enter Message"></textarea>
+				  <input type="text" placeholder="Enter Mobile">
+				  <select name="packages1" id="packages1">
+				  <option style="color:gray" value="null" disabled selected>Select Your Plan</option>
+  					<option value="Monthly">Monthly Plan</option>
+ 					<option value="Three">Three Months Plan </option>
+  					<option value="Six">Six Months Plan</option>
+  					<option value="Annual">Annual Plan</option>
+				</select>
+                  <textarea placeholder="Enter Message If you have Any"></textarea>
                   <button type="submit">Send Message</button>
                </form>
             </div>
