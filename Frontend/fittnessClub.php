@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	  <script src="jquery-3.5.1.min.js"></script>
+  <script src="sweetalert2.all.min.js"></script>
   <style>
     .wow:first-child {
       visibility: hidden;
@@ -459,6 +461,7 @@
     );
     wow.init();
   </script>
+
 </body>
 </html>
 
