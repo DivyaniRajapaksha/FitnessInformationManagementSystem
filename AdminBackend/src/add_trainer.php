@@ -68,7 +68,7 @@
                             <span style="color:#0065b3 ;">FitnessHub</span>
                         </li>
                         <li class="sidebar-dropdown">
-                            <a href="#">
+                            <a href="index.php">
                                 <i class="fa fa-tachometer-alt"></i>
                                 <span class="menu-text">Dashboard</span>
                                 <span class="badge badge-pill badge-danger">3</span>
@@ -84,7 +84,7 @@
                             <div class="sidebar-submenu">
                                 <ul>
                                     <li>
-                                        <a href="#">Add Member
+                                        <a href="add_member.php">Add Member
 
                                         </a>
                                     </li>
@@ -103,7 +103,7 @@
                             <div class="sidebar-submenu">
                                 <ul>
                                     <li>
-                                        <a href="#">Add Branches</a>
+                                        <a href="add_branch.php">Add Branches</a>
                                     </li>
                                     <li>
                                         <a href="#">View Branches</a>

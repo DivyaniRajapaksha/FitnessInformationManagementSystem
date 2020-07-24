@@ -84,7 +84,7 @@
                             <div class="sidebar-submenu">
                                 <ul>
                                     <li>
-                                        <a href="#">Add Member
+                                        <a href="add_member.php">Add Member
 
                                         </a>
                                     </li>
@@ -103,7 +103,7 @@
                             <div class="sidebar-submenu">
                                 <ul>
                                     <li>
-                                        <a href="add_branch.php">Add Branches</a>
+                                        <a href="#">Add Branches</a>
                                     </li>
                                     <li>
                                         <a href="#">View Branches</a>
@@ -144,25 +144,21 @@
             <div id="overlay" class="overlay"></div>
             <div class="container-fluid p-5">
                 <div class="row">
-                <form class="form-group mt-3" method="post" action="">
-                        <div><h3 style="color:#0065b3 ">ADD MEMBER</h3></div>
-                        <label class="mt-3"><span style="color: #0065b3">Member ID</span></label>
-	                	<input type="text" name="id" class="form-control" style="width: 700px;">
-		                <label class="mt-3"><span style="color: #0065b3">Member Name</span></label>
-		                <input type="text" name="name" class="form-control">
-		                <label class="mt-3"><span style="color: #0065b3">Age</span></label>
-		                <input type="text" name="age" class="form-control">
-		                <label class="mt-3"><span style="color: #0065b3">DOB</span></label>
-		                <input type="text" name="dob" class="form-control">
-		                <label class="mt-3"><span style="color: #0065b3">Package</span></label>
-		                <input type="text" name="package" class="form-control">
-		                <label class="mt-3"><span style="color: #0065b3">Mobile NO</span></label>
-		                <input type="text" name="mobileno" class="form-control">
-		                <label class="mt-3"><span style="color: #0065b3">Payment Area ID</span></label>
-		                <input type="text" name="pay_id" class="form-control">
-		                <label class="mt-3"><span style="color: #0065b3">Trainer ID</span></label>
-		                <input type="text" name="trainer_id" class="form-control">
-		                <button class="btn btn-dark mt-3" type="submit" name="member">ADD</button>
+                    <form class="form-group mt-3" method="post" action="">
+                        <div><h3 style="color:#0065b3 ">ADD BRANCH</h3></div>
+                        <label class="mt-3"><span style="color: #0065b3;">Branch ID</span></label>
+                        <input type="text" name="id" class="form-control" style="width: 700px;">
+                        <label class="mt-3"><span style="color: #0065b3">Branch Name</span></label>
+                        <input type="text" name="name" class="form-control">
+                        <label class="mt-3"><span style="color: #0065b3">Branch Address</span></label>
+                        <input type="text" name="address" class="form-control">
+                        <label class="mt-3"><span style="color: #0065b3">Branch Type</span></label>
+                        <select name="type" class="form-control mt-3">
+                        <option value="unisex">UNISEX</option>
+                        <option value="women">WOMEN</option>
+                        <option value="men">MEN</option>  
+                        </select>
+                        <button class="btn btn-dark mt-3" type="submit" name="gym">ADD</button>
                         
                     </form>
                 </div>

@@ -144,23 +144,37 @@
             <div id="overlay" class="overlay"></div>
             <div class="container-fluid p-5">
                 <div class="row">
-                    <form class="form-group mt-3" method="post" action="">
-                        <div><h3 style="color:#0065b3 ">ADD BRANCH</h3></div>
-                        <label class="mt-3"><span style="color: #0065b3;">Branch ID</span></label>
-                        <input type="text" name="id" class="form-control" style="width: 700px;">
-                        <label class="mt-3"><span style="color: #0065b3">Branch Name</span></label>
-                        <input type="text" name="name" class="form-control">
-                        <label class="mt-3"><span style="color: #0065b3">Branch Address</span></label>
-                        <input type="text" name="address" class="form-control">
-                        <label class="mt-3"><span style="color: #0065b3">Branch Type</span></label>
-                        <select name="type" class="form-control mt-3">
-                        <option value="unisex">UNISEX</option>
-                        <option value="women">WOMEN</option>
-                        <option value="men">MEN</option>  
-                        </select>
-                        <button class="btn btn-dark mt-3" type="submit" name="gym">ADD</button>
-                        
-                    </form>
+                <h2 style="color:#0065b3 ">STATISTICS</h2>
+                <div id="piechart"></div>
+
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+        <script type="text/javascript">
+        // Load google charts
+            google.charts.load('current', {'packages':['corechart']});
+            google.charts.setOnLoadCallback(drawChart);
+
+        // Draw the chart and set the chart values
+            function drawChart() {
+                 var data = google.visualization.arrayToDataTable([
+                 ['Task', 'Hours per Day'],
+                 ['Work', 8],
+                ['Eat', 2],
+                ['TV', 4],
+                    ['Gym', 2],
+                    ['Sleep', 8]
+                ]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'My Average Day', 'width':550, 'height':400};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+
+</script>
+                
                 </div>
             </div>
         </main>
