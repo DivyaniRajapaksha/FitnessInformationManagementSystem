@@ -103,7 +103,7 @@
                             <div class="sidebar-submenu">
                                 <ul>
                                     <li>
-                                        <a href="#">Add Branches</a>
+                                        <a href="add_branch.php">Add Branches</a>
                                     </li>
                                     <li>
                                         <a href="#">View Branches</a>
@@ -144,20 +144,30 @@
             <div id="overlay" class="overlay"></div>
             <div class="container-fluid p-5">
                 <div class="row">
-                    <form class="form-group mt-3" method="post" action="">
+                    <form class="form-group mt-3" method="post" action="handle_addBranch.php">
                         <div><h3 style="color:#0065b3 ">ADD BRANCH</h3></div>
+
                         <label class="mt-3"><span style="color: #0065b3;">Branch ID</span></label>
                         <input type="text" name="id" class="form-control" style="width: 700px;">
+
                         <label class="mt-3"><span style="color: #0065b3">Branch Name</span></label>
                         <input type="text" name="name" class="form-control">
+
                         <label class="mt-3"><span style="color: #0065b3">Branch Address</span></label>
-                        <input type="text" name="address" class="form-control">
+                        <input type="text" name="street" class="form-control" placeholder="No.888"><br>
+                        <input type="text" name="lane" class="form-control" placeholder="Queens Road"><br>
+                        <input type="text" name="city" class="form-control" placeholder="London">
+
                         <label class="mt-3"><span style="color: #0065b3">Branch Type</span></label>
-                        <select name="type" class="form-control mt-3">
-                        <option value="unisex">UNISEX</option>
-                        <option value="women">WOMEN</option>
-                        <option value="men">MEN</option>  
+                        <select name="category" class="form-control mt-3">
+                        <option value="unisex">Unisex</option>
+                        <option value="women">Women</option>
+                        <option value="men">Men</option>  
                         </select>
+
+                        <label class="mt-3"><span style="color: #0065b3">Contact Number</span></label>
+                        <input type="tel" name="mobileno" class="form-control" pattern="[0-9]{10}" maxlength="10" placeholder="0778541236" required>
+
                         <button class="btn btn-dark mt-3" type="submit" name="gym">ADD</button>
                         
                     </form>

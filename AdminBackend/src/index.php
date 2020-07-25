@@ -103,7 +103,7 @@
                             <div class="sidebar-submenu">
                                 <ul>
                                     <li>
-                                        <a href="#">Add Branches</a>
+                                        <a href="add_branch.php">Add Branches</a>
                                     </li>
                                     <li>
                                         <a href="#">View Branches</a>

@@ -144,18 +144,27 @@
             <div id="overlay" class="overlay"></div>
             <div class="container-fluid p-5">
                 <div class="row">
-                <form class="form-group mt-3" method="post" action="">
+                <form class="form-group mt-3" method="post" action="handle_addEmployee.php">
                         <div><h3 style="color:#0065b3 ">ADD TRAINER</h3></div>
                         <label class="mt-3"><span style="color: #0065b3">Trainer ID</span></label>
-		                <input type="text" name="id" class="form-control" style="width: 700px;">
-		                <label class="mt-3"><span style="color: #0065b3">Trainer Name</span></label>
-		                <input type="text" name="name" class="form-control">
-		                <label class="mt-3"><span style="color: #0065b3">Time</span></label>
-		                <input type="text" name="time" class="form-control">
-		                <label class="mt-3"><span style="color: #0065b3">Mobile NO</span></label>
-		                <input type="text" name="mobileno" class="form-control">
-		                <label class="mt-3"><span style="color: #0065b3">Payment Arae ID</span></label>
-		                <input type="text" name="pay_id" class="form-control">
+                        <input type="text" name="id" class="form-control" style="width: 700px;" placeholder="Enter Your ID" required> 
+                        <label class="mt-3"><span style="color: #0065b3">Trainer Name</span></label>
+                        <input type="text" name="name" class="form-control" placeholder="James" required>
+                        <label class="mt-3"><span style="color: #0065b3">Address</span></label>
+                        <input type="text" name="street" class="form-control" placeholder="No.888"><br>
+                        <input type="text" name="lane" class="form-control" placeholder="Queens Road"><br>
+                        <input type="text" name="city" class="form-control" placeholder="London">
+                        <label class="mt-3"><span style="color: #0065b3">NIC</span></label>
+                        <input type="text" name="nic" class="form-control" placeholder="888888888888" required>
+                        <label class="mt-3"><span style="color: #0065b3">Email</span></label>
+                        <input type="email" name="email" id="email" class="form-control" pattern=".+@gmail.com" size="30" placeholder="youremail@gmail.com" required>
+		                <label class="mt-3"><span style="color: #0065b3">Contact Number</span></label>
+                        <input type="tel" name="mobileno" class="form-control" pattern="[0-9]{10}" maxlength="11" placeholder="0778541236" required>
+                        <label class="mt-3"><span style="color: #0065b3">Password</span></label>
+                        <input type="password" name='password' class="form-control" placeholder="Enter a Password" required>
+                        <label class="mt-3"><span style="color: #0065b3">Confirm Password</span></label>
+                        <input type="password" name='cpassword' class="form-control" placeholder="Confirm the password" required>
+		                
 		                <button class="btn btn-dark mt-3" type="submit" name="trainer">ADD</button>
                     </form>
                 </div>
@@ -163,7 +172,7 @@
         </main>
         <!-- page-content" -->
     </div>
-      
+    
     <!-- page-wrapper -->
 
     <!-- using online scripts -->
@@ -187,3 +196,4 @@
 </body>
 
 </html>
+

@@ -1,47 +1,55 @@
 
-<?php include 'properties.php';?>
-<br/>
-<?php
-   
-   session_start();
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
 
-   $sql = "CREATE TABLE AdminLogin IF NOT EXISTS (
-    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    username VARCHAR(30) NOT NULL,
-    password VARCHAR(8) NOT NULL,
-    PRIMARY KEY (`id`),
-    )";
-    
-    if ($conn->query($sql) === TRUE) {
-      echo "Table AdminLogin created successfully";
-    } else {
-      echo "Error creating table: " . $conn->error;
-    }
-    
-    $conn->close();
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">       
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" 
+		integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
    
-   if($_SERVER["REQUEST_METHOD"] == "POST") {
-      // username and password sent from form 
-      
-      $myusername = mysqli_real_escape_string($db,$_POST['username']);
-      $mypassword = mysqli_real_escape_string($db,$_POST['password']); 
-      
-      $sql = "SELECT id FROM admin WHERE username = '$myusername' and passcode = '$mypassword'";
-      $result = mysqli_query($db,$sql);
-      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-      $active = $row['active'];
-      
-      $count = mysqli_num_rows($result);
-      
-      // If result matched $myusername and $mypassword, table row must be 1 row
-		
-      if($count == 1) {
-         session_register("myusername");
-         $_SESSION['login_user'] = $myusername;
-         
-         header("location: welcome.php");
-      }else {
-         $error = "Your Login Name or Password is invalid";
-      }
-   }
-?>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+
+</head>
+<body>
+<div class="container">
+	<div class="d-flex justify-content-center h-100">
+		<div class="card">
+			<div class="card-header">
+				<h3>Login</h3>
+			</div>
+			<div class="card-body">
+				<form method="POST" action="login_process.php">
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-user"></i></span>
+						</div>
+						<input type="text" name="name" class="form-control" placeholder="username" required >
+						
+					</div>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-lock"></i></span>
+						</div>
+
+						<input type="password" name="password" class="form-control" placeholder="password" required>
+						
+					</div>
+					
+					<div  class="d-flex justify-content-center mt-3 login_container">
+						<input type="submit" value="Login" class="btn float-right font-weight-bold login_btn ">
+					</div>
+				</form>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
