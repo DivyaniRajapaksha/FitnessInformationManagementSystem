@@ -1,3 +1,5 @@
+<?php include 'properties.php';?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +10,9 @@
     <meta name="description"
         content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
     <title>FitnessHub admin Dashboard </title>
-
+    <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+    </style>
     <!-- using online links -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -68,7 +72,7 @@
                             <span style="color:#0065b3 ;">FitnessHub</span>
                         </li>
                         <li class="sidebar-dropdown">
-                            <a href="#">
+                            <a href="index.php">
                                 <i class="fa fa-tachometer-alt"></i>
                                 <span class="menu-text">Dashboard</span>
                                 <span class="badge badge-pill badge-danger">3</span>
@@ -113,7 +117,7 @@
                             </div>
                         </li>
                         <li class="sidebar-dropdown">
-                            <a href="view_request.php">
+                            <a href="#">
                                 <i class="fa fa-globe"></i>
                                 <span class="menu-text">Requests</span>
                                 <span class="badge badge-pill badge-warning">New</span>
@@ -144,37 +148,49 @@
             <div id="overlay" class="overlay"></div>
             <div class="container-fluid p-5">
                 <div class="row">
-                <h2 style="color:#0065b3 ">STATISTICS</h2>
-                <div id="piechart"></div>
-
-        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-
-        <script type="text/javascript">
-        // Load google charts
-            google.charts.load('current', {'packages':['corechart']});
-            google.charts.setOnLoadCallback(drawChart);
-
-        // Draw the chart and set the chart values
-            function drawChart() {
-                 var data = google.visualization.arrayToDataTable([
-                 ['Task', 'Hours per Day'],
-                 ['Work', 8],
-                ['Eat', 2],
-                ['TV', 4],
-                    ['Gym', 2],
-                    ['Sleep', 8]
-                ]);
-
-  // Optional; add a title and set the width and height of the chart
-  var options = {'title':'My Average Day', 'width':550, 'height':400};
-
-  // Display the chart inside the <div> element with id="piechart"
-  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-  chart.draw(data, options);
-}
-
-</script>
-                
+                <div><h2 style="color:#0065b3 ">CUSTOMER REQUESTS</h2></div>
+                <table class="table">
+  <thead style="Background-color:#0065b3;">
+    <tr>
+      <th scope="col" style="color:#ffff;">RequestID</th>
+      <th scope="col" style="color:#ffff;">Name</th>
+      <th scope="col" style="color:#ffff;">Email</th>
+      <th scope="col" style="color:#ffff;">Mobile No</th>
+      <th scope="col" style="color:#ffff;">Requested Plan</th>
+      <th scope="col" style="color:#ffff;">Requested Date</th>
+      <th scope="col" style="color:#ffff;">Description</th>
+      <th scope="col" style="color:#ffff;">Accept</th>
+      <th scope="col" style="color:#ffff;">Cancel</th>
+    </tr>
+  </thead>
+  <tbody>
+   
+    <?php
+    $sql = "SELECT * FROM `requests`";
+    $result = $conn->query($sql);
+    
+    if ($result->num_rows > 0) {
+      // output data of each row
+      while($row = $result->fetch_assoc()) {
+        //echo "id: " . $row["id"]. " - Name: " . $row["fname"]. " " . $row["email"]. "<br>";
+        echo "<tr>";
+        echo "<td>" . $row['id'] . "</td>";
+        echo "<td>" . $row['fname'] . "</td>";
+        echo "<td>" . $row['email'] . "</td>";
+        echo "<td>" . $row['mobile'] . "</td>";
+        echo "<td>" . $row['plan'] . "</td>";
+        echo "<td>" . $row['reg_date'] . "</td>";
+        echo "<td>" . $row['description'] . "</td>";
+        echo '<td><input type="button" class="btn btn-success" name="Accept" value="Accept"></td>';
+        echo '<td><input type="button" class="btn btn-danger" name="Cancel" value="Cancel"></td>';
+        echo "</tr>";
+        }
+        } else {
+              echo "0 results";
+        }
+        ?>
+  </tbody>
+</table>
                 </div>
             </div>
         </main>
