@@ -24,7 +24,7 @@
 				<h3>Login</h3>
 			</div>
 			<div class="card-body">
-				<form method="POST" action="login_process.php">
+				<form method="POST" action="authenticate.php">
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
