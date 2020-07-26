@@ -84,12 +84,12 @@
                             <div class="sidebar-submenu">
                                 <ul>
                                     <li>
-                                        <a href="add_member.php">Add Member
+                                        <a href="add_member.php.php">Add Member
 
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">View Member</a>
+                                        <a href="view_member.php">View Member</a>
                                     </li>
                                   
                                 </ul>
@@ -106,14 +106,14 @@
                                         <a href="add_branch.php">Add Branches</a>
                                     </li>
                                     <li>
-                                        <a href="#">View Branches</a>
+                                        <a href="view_branch.php">View Branches</a>
                                     </li>
                                     
                                 </ul>
                             </div>
                         </li>
                         <li class="sidebar-dropdown">
-                            <a href="#">
+                            <a href="view_requests.php">
                                 <i class="fa fa-globe"></i>
                                 <span class="menu-text">Requests</span>
                                 <span class="badge badge-pill badge-warning">New</span>
@@ -130,7 +130,7 @@
                                         <a href="#">Add Employee</a>
                                     </li>
                                     <li>
-                                        <a href="#">View Employee</a>
+                                        <a href="view_employee.php">View Employee</a>
                                     </li>
                                    
                                 </ul>

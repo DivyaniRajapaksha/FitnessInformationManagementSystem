@@ -1,3 +1,5 @@
+<?php include 'properties.php';?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +10,9 @@
     <meta name="description"
         content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
     <title>FitnessHub admin Dashboard </title>
-
+    <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+    </style>
     <!-- using online links -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -103,7 +107,7 @@
                             <div class="sidebar-submenu">
                                 <ul>
                                     <li>
-                                        <a href="#">Add Branches</a>
+                                        <a href="add_branch.php">Add Branches</a>
                                     </li>
                                     <li>
                                         <a href="view_branch.php">View Branches</a>
@@ -144,33 +148,50 @@
             <div id="overlay" class="overlay"></div>
             <div class="container-fluid p-5">
                 <div class="row">
-                    <form class="form-group mt-3" method="post" action="handle_addBranch.php">
-                        <div><h3 style="color:#0065b3 ">ADD BRANCH</h3></div>
-
-                        <label class="mt-3"><span style="color: #0065b3;">Branch ID</span></label>
-                        <input type="text" name="id" class="form-control" style="width: 700px;">
-
-                        <label class="mt-3"><span style="color: #0065b3">Branch Name</span></label>
-                        <input type="text" name="name" class="form-control">
-
-                        <label class="mt-3"><span style="color: #0065b3">Branch Address</span></label>
-                        <input type="text" name="street" class="form-control" placeholder="No.888"><br>
-                        <input type="text" name="lane" class="form-control" placeholder="Queens Road"><br>
-                        <input type="text" name="city" class="form-control" placeholder="London">
-
-                        <label class="mt-3"><span style="color: #0065b3">Branch Type</span></label>
-                        <select name="category" class="form-control mt-3">
-                        <option value="unisex">Unisex</option>
-                        <option value="women">Women</option>
-                        <option value="men">Men</option>  
-                        </select>
-
-                        <label class="mt-3"><span style="color: #0065b3">Contact Number</span></label>
-                        <input type="tel" name="mobileno" class="form-control" pattern="[0-9]{10}" maxlength="10" placeholder="0778541236" required>
-
-                        <button class="btn btn-dark mt-3" type="submit" name="gym">ADD</button>
-                        
-                    </form>
+                <div><h2 style="color:#0065b3 ">EMPLOYEE DETAILS</h2></div>
+                <table class="table">
+  <thead style="Background-color:#0065b3;">
+    <tr>
+      <th scope="col" style="color:#ffff;">Employee ID</th>
+      <th scope="col" style="color:#ffff;">Name</th>
+      <th scope="col" style="color:#ffff;">Street</th>
+      <th scope="col" style="color:#ffff;">Lane</th>
+      <th scope="col" style="color:#ffff;">City</th>      
+      <th scope="col" style="color:#ffff;">Mobile No</th>
+           
+      <th scope="col" style="color:#ffff;">Update</th>
+      <th scope="col" style="color:#ffff;">Save</th>
+    </tr>
+  </thead>
+  <tbody>
+   
+    <?php
+    $sql = "SELECT * FROM `branches`";
+    $result = $conn->query($sql);
+    
+    if ($result->num_rows > 0) {
+      // output data of each row
+      while($row = $result->fetch_assoc()) {
+        //echo "id: " . $row["id"]. " - Name: " . $row["fname"]. " " . $row["email"]. "<br>";
+        echo "<tr>";
+        echo "<td>" . $row['id'] . "</td>";
+        echo "<td>" . $row['name'] . "</td>";
+        echo "<td>" . $row['street'] . "</td>";
+        echo "<td>" . $row['lane'] . "</td>";
+        echo "<td>" . $row['city'] . "</td>";
+        echo "<td>" . $row['category'] . "</td>";
+        echo "<td>" . $row['mobileNo'] . "</td>";
+       
+        echo '<td><input type="button" class="btn btn-success" name="Update" value="Update"></td>';
+        echo '<td><input type="button" class="btn btn-danger" name="Save" value="Save"></td>';
+        echo "</tr>";
+        }
+        } else {
+              echo "0 results";
+        }
+        ?>
+  </tbody>
+</table>
                 </div>
             </div>
         </main>

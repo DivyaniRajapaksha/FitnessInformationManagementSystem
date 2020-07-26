@@ -93,7 +93,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">View Member</a>
+                                        <a href="view_member.php">View Member</a>
                                     </li>
                                   
                                 </ul>
@@ -107,10 +107,10 @@
                             <div class="sidebar-submenu">
                                 <ul>
                                     <li>
-                                        <a href="#">Add Branches</a>
+                                        <a href="add_branch.php">Add Branches</a>
                                     </li>
                                     <li>
-                                        <a href="#">View Branches</a>
+                                        <a href="view_branch.php">View Branches</a>
                                     </li>
                                     
                                 </ul>
@@ -131,10 +131,10 @@
                             <div class="sidebar-submenu">
                                 <ul>
                                     <li>
-                                        <a href="add_trainer.php">Add Employee</a>
+                                        <a href="add_employee.php">Add Employee</a>
                                     </li>
                                     <li>
-                                        <a href="#">View Employee</a>
+                                        <a href="view_employee.php">View Employee</a>
                                     </li>
                                    
                                 </ul>
