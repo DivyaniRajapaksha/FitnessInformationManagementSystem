@@ -93,7 +93,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="view_member.php">View Member</a>
+                                        <a href="#">View Member</a>
                                     </li>
                                   
                                 </ul>
@@ -107,10 +107,10 @@
                             <div class="sidebar-submenu">
                                 <ul>
                                     <li>
-                                        <a href="add_branch.php">Add Branches</a>
+                                        <a href="#">Add Branches</a>
                                     </li>
                                     <li>
-                                        <a href="view_branch.php">View Branches</a>
+                                        <a href="#">View Branches</a>
                                     </li>
                                     
                                 </ul>
@@ -134,7 +134,7 @@
                                         <a href="add_employee.php">Add Employee</a>
                                     </li>
                                     <li>
-                                        <a href="view_employee.php">View Employee</a>
+                                        <a href="#">View Employee</a>
                                     </li>
                                    
                                 </ul>
@@ -190,7 +190,44 @@
         }
         ?>
   </tbody>
+  
 </table>
+
+        <?php
+        if(isset($_POST['Accept'])) { 
+            echo "This is Button1 that is selected"; 
+            $to = "fashionstoregtsd@gmail.com";
+            $subject = "Request Confirmation";
+    
+          
+            $message = '<html><body>';
+            $message .= '<h1 style="color:#0065b3;">Fitness Hub Pvt(LTD) has accepted your request!</h1>';
+            $message .= '<p style="color:	#000000;font-size:18px;">Happy to announce you as a FitnessHub Member!Here are the Credentials to your account:</p>';
+            $message .= '<table>
+            <tr>
+                <th>Username</th>
+                <th>Password</th>
+            </tr>
+            <tr>
+                <td>dd@gmail.com</td>
+                 <td>dd123*</td>
+             </tr>       
+        </table><br/>';
+            $message .= '<button style="color:#ffff;background:  #008CBA;border: none; padding: 15px 32px; font-size: 14px;display: inline-block;border-radius: 4px;">VIew Invitation</button>';
+            $message .= '</body></html>';
+    
+        // Always set content-type when sending HTML email
+        $headers = "MIME-Version: 1.0" . "\r\n";
+        $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+    
+        // More headers
+        $headers .= 'From: <webmaster@example.com>' . "\r\n";
+        $headers .= 'Cc: myboss@example.com' . "\r\n";
+    
+        mail($to,$subject,$message,$headers);
+        }
+       
+        ?>
                 </div>
             </div>
         </main>
