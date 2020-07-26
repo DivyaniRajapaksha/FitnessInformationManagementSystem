@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
         content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
-    <title>FitnessHub admin Dashboard </title>
+    <title>FitnessHub Admin Dashboard </title>
 
     <!-- using online links -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
@@ -146,6 +146,7 @@
                 <div class="row">
                 <h2 style="color:#0065b3 ">STATISTICS</h2>
                 <div id="piechart"></div>
+                
 
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 

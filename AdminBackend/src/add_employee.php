@@ -84,7 +84,7 @@
                             <div class="sidebar-submenu">
                                 <ul>
                                     <li>
-                                        <a href="add_member.php.php">Add Member
+                                        <a href="add_member.php">Add Member
 
                                         </a>
                                     </li>
@@ -113,7 +113,7 @@
                             </div>
                         </li>
                         <li class="sidebar-dropdown">
-                            <a href="view_requests.php">
+                            <a href="view_request.php">
                                 <i class="fa fa-globe"></i>
                                 <span class="menu-text">Requests</span>
                                 <span class="badge badge-pill badge-warning">New</span>
@@ -140,12 +140,12 @@
                 </div>
          </nav>
           <!-- page-content  -->
-          <main class="page-content pt-2">
+          <main class="page-content">
             <div id="overlay" class="overlay"></div>
             <div class="container-fluid p-5">
                 <div class="row">
                 <form class="form-group mt-3" method="post" action="handle_addEmployee.php">
-                        <div><h3 style="color:#0065b3 ">ADD TRAINER</h3></div>
+                        <div><h3 style="color:#0065b3 ">ADD EMPLOYEE</h3></div>
                         <label class="mt-3"><span style="color: #0065b3">Trainer ID</span></label>
                         <input type="text" name="id" class="form-control" style="width: 700px;" placeholder="Enter Your ID" required> 
                         <label class="mt-3"><span style="color: #0065b3">Trainer Name</span></label>
