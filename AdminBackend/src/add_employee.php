@@ -113,7 +113,7 @@
                             </div>
                         </li>
                         <li class="sidebar-dropdown">
-                            <a href="view_requests.php">
+                            <a href="view_request.php">
                                 <i class="fa fa-globe"></i>
                                 <span class="menu-text">Requests</span>
                                 <span class="badge badge-pill badge-warning">New</span>
