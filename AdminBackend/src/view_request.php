@@ -93,7 +93,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">View Member</a>
+                                        <a href="view_members.php">View Member</a>
                                     </li>
                                   
                                 </ul>
@@ -147,7 +147,7 @@
           <main class="page-content pt-2">
             <div id="overlay" class="overlay"></div>
             <div class="container-fluid p-5">
-                <div class="row">
+               <!-- <div class="row">-->
                 <div><h2 style="color:#0065b3 ">CUSTOMER REQUESTS</h2></div>
                 <table class="table">
   <thead style="Background-color:#0065b3;">
@@ -229,7 +229,7 @@
        
         ?>
                 </div>
-            </div>
+            <!--</div>-->
         </main>
         <!-- page-content" -->
     </div>

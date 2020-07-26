@@ -1,3 +1,5 @@
+<?php include 'properties.php';?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +10,9 @@
     <meta name="description"
         content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
     <title>FitnessHub admin Dashboard </title>
-
+    <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+    </style>
     <!-- using online links -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -84,12 +88,12 @@
                             <div class="sidebar-submenu">
                                 <ul>
                                     <li>
-                                        <a href="add_member.php.php">Add Member
+                                        <a href="add_member.php">Add Member
 
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="view_members.php">View Member</a>
+                                        <a href="#">View Member</a>
                                     </li>
                                   
                                 </ul>
@@ -103,17 +107,17 @@
                             <div class="sidebar-submenu">
                                 <ul>
                                     <li>
-                                        <a href="add_branch.php">Add Branches</a>
+                                        <a href="#">Add Branches</a>
                                     </li>
                                     <li>
-                                        <a href="view_branch.php">View Branches</a>
+                                        <a href="#">View Branches</a>
                                     </li>
                                     
                                 </ul>
                             </div>
                         </li>
                         <li class="sidebar-dropdown">
-                            <a href="view_requests.php">
+                            <a href="#">
                                 <i class="fa fa-globe"></i>
                                 <span class="menu-text">Requests</span>
                                 <span class="badge badge-pill badge-warning">New</span>
@@ -127,10 +131,10 @@
                             <div class="sidebar-submenu">
                                 <ul>
                                     <li>
-                                        <a href="#">Add Employee</a>
+                                        <a href="add_employee.php">Add Employee</a>
                                     </li>
                                     <li>
-                                        <a href="view_employee.php">View Employee</a>
+                                        <a href="#">View Employee</a>
                                     </li>
                                    
                                 </ul>
@@ -143,36 +147,56 @@
           <main class="page-content pt-2">
             <div id="overlay" class="overlay"></div>
             <div class="container-fluid p-5">
-                <div class="row">
-                <form class="form-group mt-3" method="post" action="handle_addEmployee.php">
-                        <div><h3 style="color:#0065b3 ">ADD TRAINER</h3></div>
-                        <label class="mt-3"><span style="color: #0065b3">Trainer ID</span></label>
-                        <input type="text" name="id" class="form-control" style="width: 700px;" placeholder="Enter Your ID" required> 
-                        <label class="mt-3"><span style="color: #0065b3">Trainer Name</span></label>
-                        <input type="text" name="name" class="form-control" placeholder="James" required>
-                        <label class="mt-3"><span style="color: #0065b3">Address</span></label>
-                        <input type="text" name="street" class="form-control" placeholder="No.888"><br>
-                        <input type="text" name="lane" class="form-control" placeholder="Queens Road"><br>
-                        <input type="text" name="city" class="form-control" placeholder="London">
-                        <label class="mt-3"><span style="color: #0065b3">NIC</span></label>
-                        <input type="text" name="nic" class="form-control" placeholder="888888888888" required>
-                        <label class="mt-3"><span style="color: #0065b3">Email</span></label>
-                        <input type="email" name="email" id="email" class="form-control" pattern=".+@gmail.com" size="30" placeholder="youremail@gmail.com" required>
-		                <label class="mt-3"><span style="color: #0065b3">Contact Number</span></label>
-                        <input type="tel" name="mobileno" class="form-control" pattern="[0-9]{10}" maxlength="11" placeholder="0778541236" required>
-                        <label class="mt-3"><span style="color: #0065b3">Password</span></label>
-                        <input type="password" name='password' class="form-control" placeholder="Enter a Password" required>
-                        <label class="mt-3"><span style="color: #0065b3">Confirm Password</span></label>
-                        <input type="password" name='cpassword' class="form-control" placeholder="Confirm the password" required>
-		                
-		                <button class="btn btn-dark mt-3" type="submit" name="trainer">ADD</button>
-                    </form>
+               <!-- <div class="row">-->
+                <div><h2 style="color:#0065b3 ">MEMBER DETAILS</h2></div>
+                <table class="table">
+  <thead style="Background-color:#0065b3;">
+    <tr>
+      <th scope="col" style="color:#ffff;">Member ID</th>
+      <th scope="col" style="color:#ffff;">Name</th>
+      <th scope="col" style="color:#ffff;">Plan</th>
+      <th scope="col" style="color:#ffff;">Mobile No</th>
+      <th scope="col" style="color:#ffff;">Email</th>
+      <th scope="col" style="color:#ffff;">Trainer ID</th>
+      <th scope="col" style="color:#ffff;">Update</th>
+      <th scope="col" style="color:#ffff;">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+   
+    <?php
+    $sql = "SELECT * FROM `Member`";
+    $result = $conn->query($sql);
+    
+    if ($result->num_rows > 0) {
+      // output data of each row
+      while($row = $result->fetch_assoc()) {
+        //echo "id: " . $row["id"]. " - Name: " . $row["fname"]. " " . $row["email"]. "<br>";
+        echo "<tr>";
+        echo "<td>" . $row['id'] . "</td>";
+        echo "<td>" . $row['fname'] . "</td>";
+        echo "<td>" . $row['plan'] . "</td>";
+        echo "<td>" . $row['mobile'] . "</td>";
+        echo "<td>" . $row['email'] . "</td>";
+        echo "<td>" . $row['trainer_id'] . "</td>";
+        echo '<td><input type="button" class="btn btn-success" name="Update" value="Update"></td>';
+        echo '<td><input type="button" class="btn btn-danger" name="Delete" value="Delete"></td>';
+        echo "</tr>";
+        }
+        } else {
+              echo "0 results";
+        }
+        ?>
+  </tbody>
+  
+</table>
+
                 </div>
-            </div>
+            <!--</div>-->
         </main>
         <!-- page-content" -->
     </div>
-    
+      
     <!-- page-wrapper -->
 
     <!-- using online scripts -->
@@ -196,4 +220,3 @@
 </body>
 
 </html>
-

@@ -89,7 +89,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="view_member.php">View Member</a>
+                                        <a href="#">View Member</a>
                                     </li>
                                   
                                 </ul>
@@ -106,14 +106,14 @@
                                         <a href="add_branch.php">Add Branches</a>
                                     </li>
                                     <li>
-                                        <a href="view_branch.php">View Branches</a>
+                                        <a href="#">View Branches</a>
                                     </li>
                                     
                                 </ul>
                             </div>
                         </li>
                         <li class="sidebar-dropdown">
-                            <a href="view_request.php">
+                            <a href="#">
                                 <i class="fa fa-globe"></i>
                                 <span class="menu-text">Requests</span>
                                 <span class="badge badge-pill badge-warning">New</span>
@@ -127,10 +127,10 @@
                             <div class="sidebar-submenu">
                                 <ul>
                                     <li>
-                                        <a href="add_employee.php">Add Employee</a>
+                                        <a href="add_trainer.php">Add Employee</a>
                                     </li>
                                     <li>
-                                        <a href="view_employee.php">View Employee</a>
+                                        <a href="#">View Employee</a>
                                     </li>
                                    
                                 </ul>
@@ -144,7 +144,7 @@
             <div id="overlay" class="overlay"></div>
             <div class="container-fluid p-5">
                 <div class="row">
-                <form class="form-group mt-3" method="post" action="">
+                <form class="form-group mt-3" method="post" action="handle_member.php">
                         <div><h3 style="color:#0065b3 ">ADD MEMBER</h3></div>
                         <label class="mt-3"><span style="color: #0065b3">Member ID</span></label>
 	                	<input type="text" name="id" class="form-control" style="width: 700px;">
@@ -152,14 +152,12 @@
 		                <input type="text" name="name" class="form-control">
 		                <label class="mt-3"><span style="color: #0065b3">Age</span></label>
 		                <input type="text" name="age" class="form-control">
-		                <label class="mt-3"><span style="color: #0065b3">DOB</span></label>
-		                <input type="text" name="dob" class="form-control">
 		                <label class="mt-3"><span style="color: #0065b3">Package</span></label>
 		                <input type="text" name="package" class="form-control">
+                        <label class="mt-3"><span style="color: #0065b3">Email</span></label>
+		                <input type="text" name="email" class="form-control">
 		                <label class="mt-3"><span style="color: #0065b3">Mobile NO</span></label>
 		                <input type="text" name="mobileno" class="form-control">
-		                <label class="mt-3"><span style="color: #0065b3">Payment Area ID</span></label>
-		                <input type="text" name="pay_id" class="form-control">
 		                <label class="mt-3"><span style="color: #0065b3">Trainer ID</span></label>
 		                <input type="text" name="trainer_id" class="form-control">
 		                <button class="btn btn-dark mt-3" type="submit" name="member">ADD</button>
@@ -170,8 +168,6 @@
         </main>
         <!-- page-content" -->
     </div>
-
-  
       
     <!-- page-wrapper -->
 

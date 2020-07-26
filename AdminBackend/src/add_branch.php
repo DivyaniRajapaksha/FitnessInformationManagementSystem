@@ -89,7 +89,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="view_member.php">View Member</a>
+                                        <a href="view_members.php">View Member</a>
                                     </li>
                                   
                                 </ul>
