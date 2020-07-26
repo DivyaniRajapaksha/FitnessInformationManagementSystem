@@ -148,19 +148,19 @@
             <div id="overlay" class="overlay"></div>
             <div class="container-fluid p-5">
                 <div class="row">
-                <div><h2 style="color:#0065b3 ">EMPLOYEE DETAILS</h2></div>
+                <div><h2 style="color:#0065b3 ">BRANCH DETAILS</h2></div>
                 <table class="table">
   <thead style="Background-color:#0065b3;">
     <tr>
-      <th scope="col" style="color:#ffff;">Employee ID</th>
+      <th scope="col" style="color:#ffff;">Branch ID</th>
       <th scope="col" style="color:#ffff;">Name</th>
       <th scope="col" style="color:#ffff;">Street</th>
       <th scope="col" style="color:#ffff;">Lane</th>
-      <th scope="col" style="color:#ffff;">City</th>      
+      <th scope="col" style="color:#ffff;">City</th> 
+      <th scope="col" style="color:#ffff;">Category</th>
       <th scope="col" style="color:#ffff;">Mobile No</th>
            
-      <th scope="col" style="color:#ffff;">Update</th>
-      <th scope="col" style="color:#ffff;">Save</th>
+
     </tr>
   </thead>
   <tbody>
@@ -182,8 +182,7 @@
         echo "<td>" . $row['category'] . "</td>";
         echo "<td>" . $row['mobileNo'] . "</td>";
        
-        echo '<td><input type="button" class="btn btn-success" name="Update" value="Update"></td>';
-        echo '<td><input type="button" class="btn btn-danger" name="Save" value="Save"></td>';
+      
         echo "</tr>";
         }
         } else {
