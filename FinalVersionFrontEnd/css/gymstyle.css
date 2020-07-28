@@ -1,0 +1,585 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body{
+	margin:0;
+	padding:0;
+	overflow-x: hidden;
+}
+
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+	font-family: 'Roboto', sans-serif;
+}
+
+/*Header*/
+
+header{
+	position:fixed;
+	left: 0px;
+	top:0px;
+	width: 100%;
+	z-index: 10;
+	background-color: #000000;
+	padding:15px 15px;
+}
+header .container{
+	-webkit-display: flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logo a{
+	font-size: 30px;
+	text-decoration: none;
+	color:#ffffff;
+	font-weight: 700;
+}
+header .logo a span{
+	color:#0065b3;
+}
+header .nav{
+	position: fixed;
+	background-color: #0065b3;
+	width: 280px;
+	top:0;
+	right:0;
+	height: 100%;
+	z-index: 99;
+	padding:100px 0px 15px; 
+	-webkit-transform: translateX(100%);
+	transform: translateX(100%);
+	-webkit-transition: transform .5s ease;
+    transition: transform .5s ease;
+}
+header .nav.open{
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+}
+header .nav ul{
+	list-style: none;
+	margin:0;
+	padding:0px;
+}
+header .nav ul li{
+display: block;
+}
+header .nav ul li a{
+	text-decoration: none;
+	font-size: 30px;
+	font-weight: 400;
+    color:#ffffff;
+    display: block;
+    position: relative;
+    padding:10px 30px;
+}
+header .nav ul li a.active::before{
+	content: '';
+	position: absolute;
+	left:0px;
+	top:0px;
+	height: 100%;
+	width:100%;
+	background-color:#000000;
+	opacity:.2;
+	-webkit-transition: width .5s ease;
+	transition: width .5s ease;
+	z-index: -1;
+}
+header .nav ul li a::before{
+	content: '';
+	position: absolute;
+	left:0px;
+	top:0px;
+	height: 100%;
+	width:0px;
+	background-color:#000000;
+	opacity:.2;
+	-webkit-transition: width .5s ease;
+	transition: width .5s ease;
+	z-index: -1;
+}
+header .nav ul li a:hover::before{
+	width: 100%;
+}
+header .side-options{
+	display: inline-block;
+	position: relative;
+	z-index: 100;
+}
+header .side-options span{
+	height: 3px;
+	margin-bottom:8px;
+	display: block;
+	background-color:#ffffff;
+	width:30px;
+	-webkit-transition: transform .5s ease;
+	transition: transform .5s ease;
+}
+header .side-options span:nth-child(1){
+	transform-origin: left top;
+}
+header .side-options span:nth-child(2){
+	transform-origin: left bottom;
+}
+
+header .side-options.active span:nth-child(1){
+	-webkit-transform: rotate(45deg) translateY(-6px);
+	transform: rotate(45deg) translateY(-6px);
+}
+header .side-options.active span:nth-child(2){
+	-webkit-transform: rotate(-45deg) translateY(6px);
+	transform: rotate(-45deg) translateY(6px)
+}
+
+.container{
+	max-width: 1170px;
+	margin: auto;
+}
+
+/*Home section*/
+.home{
+	height: 100vh;
+	background-image: url('../images/home.jpeg');
+	background-size: cover;
+	padding:15px;
+	-webkit-display: flex;
+	display: flex;
+	position: relative;
+}
+.home .go-down{
+  position: absolute;
+  bottom: 50px;
+  width: 26px;
+  height:40px;
+  border:1px solid #ffffff;
+  display: block;
+  border-radius:4px;
+  text-align: center;
+  left:50%;
+  margin-left: -13px;
+}
+.home .go-down .fa{
+	color:#ffffff;
+	-webkit-animation: goDown 1s ease infinite;
+	animation: goDown 1s ease infinite;
+}
+@-webkit-keyframes goDown{
+	0%{transform: translateY(0);opacity:.5}
+	100%{transform: translateY(10px);}
+}
+@keyframes goDown{
+	0%{transform: translateY(0);opacity:.5}
+	100%{transform: translateY(10px);}
+}
+.home .container{
+  -webkit-display: flex;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.home h1{
+	color:#ffffff;
+	font-size: 60px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin:0;
+}
+
+.home h1 span{
+	color:#0065b3;;
+}
+
+/*About section*/
+
+.about{
+	padding:80px 0px;
+	background-color:#ffffff;
+}
+
+.about .content{ 
+ -webkit-display: flex;
+ display: flex;
+}
+.about .content .box{
+	flex:0 0 33.33%;
+	max-width: 33.33%;
+	padding:15px;
+}
+.about .content .box .inner{
+	background-color:#222222;
+}
+.about .content .box:nth-child(2) .inner{
+	background-color: #0065b3;
+}
+.about .content .box .inner .img img{
+	width: 100%;
+}
+.about .content .box .inner .text{
+	padding:30px;
+}
+
+.about .content .box .inner .text h4{
+  font-size: 20px;
+  margin:0;
+  padding: 0px 0px 15px;
+  font-weight: 500;
+  color:#ffffff;
+ text-transform: capitalize;
+  text-align: center;
+}
+.about .content .box .inner .text p{
+	font-size: 15px;
+	line-height:20px;
+	color:#ffffff;
+	text-align: center;
+	margin:0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*Classes Section*/
+
+.classes{
+	padding:80px 0px 50px;
+	background-color: #ffffff;
+}
+
+.classes .content{
+	-webkit-display: flex;
+	display: flex;
+}
+
+.classes .content .box{
+	padding:15px;
+	flex:0 0 50%;
+	max-width: 50%;
+}
+
+.classes .content .img img{
+	width: 100%;
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+.classes .content .text h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: #000000;
+    padding: 0px 0px 20px;
+}
+
+.classes .content .text p{
+	font-size: 15px;
+    line-height: 20px;
+    color: #000000;
+    margin: 0;
+    padding: 0px 0px 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.classes .content .class-items .item{
+	margin-bottom: 30px;
+	display: flex;
+}
+.classes .content .class-items .item:nth-child(1){
+ background-color: #222222;
+}
+.classes .content .class-items .item:nth-child(2){
+ background-color: #0065b3;
+}
+.classes .content .class-items .item .item-text{
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.classes .content .class-items .item .item-text,
+.classes .content .class-items .item .item-img{
+	flex:0 0 50%;
+	max-width: 50%;
+	position: relative;
+}
+
+.classes .content .class-items .item .item-img img{
+ width: 100%;
+ display: block;
+}
+
+.classes .content .class-items .item .item-text h4{
+	font-size: 20px;
+    margin: 0;
+    padding: 0px 0px 15px;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+.classes .content .class-items .item .item-text p{
+	font-size: 15px;
+    line-height: 20px;
+    color: #ffffff;
+    text-align:left;
+    margin: 0;
+    padding:0 0 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Class Schedule Section*/
+.schedule{
+	padding:80px 0px;
+}
+
+.schedule .content{
+	-webkit-display: flex;
+	display: flex;
+}
+
+.schedule .content .box{
+	flex:0 0 50%;
+	max-width: 100%;
+	padding:15px;
+}
+
+.schedule .content .text h2{
+   font-size: 30px;
+    font-weight: 500;
+    color: #000000;
+    padding: 0px 0px 20px;
+}
+
+.schedule .content .text p{
+	font-size: 15px;
+    line-height: 20px;
+    color: #222222;
+    margin: 0;
+    padding: 0px 0px 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+.schedule .content .text img{
+	width: 100%;
+	transform: rotateY(180deg);
+}
+
+.schedule .content .timing .table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.schedule .content .timing .table td{
+	border:1px solid #dfdfdf;
+	padding: 8px;
+	font-size: 15px;
+	text-align: center;
+	color:#222222;
+}
+
+.schedule .content .timing .table tr:nth-child(even) td.day{
+	background-color: #222222;
+}
+.schedule .content .timing .table tr:nth-child(odd) td.day{
+	background-color: #444444;
+}
+.schedule .content .timing .table tr:nth-child(1) td.day{
+	background-color: #0065b3;
+}
+.schedule .content .timing .table tr td.day{
+	color:#ffffff;
+	border-color:transparent;
+}
+
+.packages{
+
+	padding:80px 0px 50px;
+	background-color: #ffffff;
+}
+
+.packages h2{
+	font-size: 30px;
+	font-weight: 500;
+	color:#000000;
+	padding: 0px 0px 20px;
+	text-align: center;
+}
+
+.packages .packagesTitle{
+ font-size: 15px;
+ line-height: 20px;
+ color:#222222;
+ margin:0;
+ text-align: center;
+ padding:0 20% 50px;
+ font-family: 'Roboto', sans-serif;
+}
+
+.packages .packagesContent{
+	-webkit-display: flex;
+	display: flex;
+}
+
+.packages .packagesContent .packageBox{
+	flex:0 0 33.33%;
+	max-width: 33.33%;
+	padding: 15px;
+}
+
+.packages .packagesContent .packageBox .package{
+	
+	background-color: #f0f0f0;
+}
+
+.packages .packagesContent .packageBox .package .package_PriceTag{
+	padding: 15px;
+	font-size: 20px;
+	background-color: #0065b3;
+	color:#ffffff;
+	text-align: center;
+	font-weight: 700;
+}
+
+.packages .packagesContent .packageBox .package .package_Txt{
+	padding:30px 15px;
+	text-align: center;
+}
+
+.packages .packagesContent .packageBox .package .package_Txt h3{
+    font-size: 24px;
+	color:#222222;
+	margin:0;
+	padding:0px 0px 20px;
+	font-weight: 700;
+}
+
+.packages .packagesContent .packageBox .package .package_Txt p{
+     font-size: 15px;
+     line-height: 20px;
+     color:#222222;
+     margin:0;
+     text-align: center;
+     padding:0 0 5px;
+     font-family: 'Roboto', sans-serif;
+}
+
+.packages .packagesContent .packageBox .package .package_Txt .Btn{
+    padding: 8px 30px;
+    background-color: #0065b3;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid transparent;
+    cursor: pointer;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    margin-top: 10px;
+}
+
+.packages .packagesContent .packageBox .package .package_Txt .Btn:hover{
+    border-color:#222222;
+	color:#222222;
+	background-color: transparent;
+}
+
+.packages .packagesContent .packageBox .package .package_Img img{
+	width: 100%;
+}
+
+/*Contact Section*/
+
+.contact{
+	padding:80px 0px;
+	background-color: #222222;
+}
+
+.contact .content{
+	-webkit-display: flex;
+	display: flex;
+}
+
+.contact .content .contactTable{
+	flex:0 0 50%;
+	max-width: 50%;
+	padding: 15px;
+}
+
+.contact .content .contactTable input,
+.contact .content .contactTable textarea{
+ height: 45px;
+ width: 100%;
+ padding:6px 12px;
+ margin-bottom: 25px;
+ background-color: transparent;
+ border:1px solid #ffffff;
+ font-family: 'Open-sans',sans-serif;
+ color:#ffffff;
+}
+.contact .content .contactTable input:focus,
+.contact .content .contactTable textarea:focus{
+ outline: none;
+}
+.contact .content .contactTable input::placeholder,
+.contact .content .contactTable textarea::placeholder{
+	color:#ffffff;
+}
+.contact .content .contactTable textarea{
+	height: 100px;
+}
+
+.contact .content .contactTable button{
+	border:none;
+	outline: none;
+	box-shadow: none;
+	height: 45px;
+	padding:0px 50px;
+	border:1px solid transparent;
+	background-color: #0065b3;
+	color:#ffffff;
+	font-size: 15px;
+	transition: all .5s ease;
+	cursor: pointer;
+}
+.contact .content .contactTable button:hover{
+	background-color:transparent;
+	color:#ffffff; 
+    border-color:#ffffff;
+}
+
+.contact .content .contactDetails h2{
+	font-size: 30px;
+    font-weight: 500;
+    color: #0065b3;
+    padding: 10px 40px 20px;
+}
+
+.contact .content .contactDetails .Info ul{
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+
+.contact .content .contactDetails .Info li{
+	display: block;
+	margin-bottom: 15px;
+	color:#ffffff;
+	font-size: 15px;
+	letter-spacing: 1px;
+	position: relative;
+	padding-left: 40px;
+	font-family: 'Open-Sans',sans-serif;
+}
+.contact .content .contactDetails .Info li span{
+	display: inline-block;
+	position: absolute;
+	left:0px;
+	top:0px;
+	font-size: 20px;
+	color:#0065b3;
+}
+
+
+
