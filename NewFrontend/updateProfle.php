@@ -2,7 +2,7 @@
 <?php
     session_start();
     $sql = "UPDATE `member` 
-            SET `fname`='".$_SESSION['fname']."',`email`='".$_SESSION['email']."',`username`='".$_SESSION['username']."',`password`='".$_SESSION['password']."',`mobile`='".$_SESSION['mobille']."' WHERE id LIKE '".$_SESSION['id']."' ";
+            SET `fname`='".$_POST['fname']."',`email`='".$_POST['email']."',`username`='".$_POST['username']."',`password`='".$_POST['password']."',`mobile`='".$_POST['mobille']."' WHERE id LIKE  '".$_SESSION[id]."'";
 
 if ($conn->query($sql) === TRUE) {
   echo "Record updated successfully";
