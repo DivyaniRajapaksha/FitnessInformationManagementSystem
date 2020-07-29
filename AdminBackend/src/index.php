@@ -52,7 +52,7 @@
                         <span class="user-name">
                             <strong><?php echo $_SESSION['login_admin']; ?></strong>
                         </span>
-                        <span class="user-role">Administrator</span>
+                        <span class="user-role"><?php echo $_SESSION['login_designation']; ?></span>
                         <span class="user-status">
                             <i class="fa fa-circle"></i>
                             <span>Online</span>
@@ -146,9 +146,10 @@
                             </div>
                             
                         </li>
+                        
                         <li>
                             <a href="logOut.php">
-                            <i class="fa fa-sign-out"></i>
+                            <i class="fa fa-power-off"></i>
                             <span>Logout</span>
                             </a>
                         </li>
