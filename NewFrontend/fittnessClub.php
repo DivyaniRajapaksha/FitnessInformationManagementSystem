@@ -81,8 +81,8 @@
   	  	  	   	   	   	  <img src="images/about1.jpg" alt="about" />
   	  	  	   	   	   </div>
                        <div class="text">
-                       	   <h4>Free Consultation</h4>
-                       	   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                       	   <h4>A Dedicated Coach</h4>
+                           <p>Our certified personal trainers are committed to supporting you in transforming your health and achieving your fitness goals</p>
                        </div>
   	  	  	   	   </div>
   	  	  	   </div>
@@ -176,7 +176,7 @@
 		 	  </div>
 		 	  <div class="box text wow slideInRight">
 		 	  	 <h2>Our Classes</h2>
-		 	  	 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+		 	  	 <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p> -->
 		 	  	<div class="class-items">
 		 	  	 <div class="item wow bounceInUp">
                      <div class="item-img">
@@ -186,16 +186,16 @@
                      	 </div>
                      </div>
                      <div class="item-text">
-                     	  <h4>Stretching Training</h4>
-                     	  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                     	  <a href="">Get Details</a>
+                     	  <h4>BUILD OUR FLAGSHIP CLASS!</h4>
+                     	  <p>BUILD is our flagship class for Achievers who are looking to build strength and confidence! We saw a need in the fitness industry for a strength-focused group class that incorporated safe and smart programming </p>
+                     	  
                      </div>
 		 	  	 </div>
 		 	  	 <div class="item wow bounceInUp">
                      <div class="item-text">
-                     	  <h4>Stretching Training</h4>
-                     	  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                     	  <a href="">Get Details</a>
+                     	  <h4>METCON FOR A GREAT HIT WORKOUT!</h4>
+                     	  <p>METCON (Metabolic Conditioning) is for Achievers who are looking for a high intensity workout that challenges their energy system! MetCon classes are conducted in a circuit-style with varying work to rest ratios.</p>
+                     	  
                      </div>
                      <div class="item-img">
                      	 <img src="images/class1.jpg" alt="classes" />
@@ -235,9 +235,7 @@
   	 	  <div class="content">
   	 	  	   <div class="box text wow slideInLeft">
   	 	  	   	   <h2>Classes Schedule</h2>
-  	 	  	   	   <p>
-  	 	  	   	   	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-  	 	  	   	   </p>
+						   <p style="text-align: left";>You can book by sending us an email or dropping a text via WhatsApp +94 (0)771234567</p> 	 	  	   	   
   	 	  	   	   <img src="images/schedule1.png" alt="schedule" />
   	 	  	   </div>
   	 	  	   <div class="box timing wow slideInRight">
@@ -246,38 +244,32 @@
                    	 	<tr>
                    	 		<td class="day">Monday</td>
                    	 		<td><strong>9:00 AM</strong></td>
-                   	 		<td>Body Building <br/> 9:00 to 10:00 AM</td>
-                   	 		<td>Room No:210</td>
+                   	 		<td>Body Building <br/> 9:00 to 10:00 AM</td>                   	 		
                    	 	</tr>
                    	 	<tr>
                    	 		<td class="day">Tuesday</td>
                    	 		<td><strong>9:00 AM</strong></td>
-                   	 		<td>Body Building <br/> 9:00 to 10:00 AM</td>
-                   	 		<td>Room No:210</td>
+                   	 		<td>Body Building <br/> 9:00 to 10:00 AM</td>                   	 		
                    	 	</tr>
                    	 	<tr>
                    	 		<td class="day">Wednesday</td>
                    	 		<td><strong>9:00 AM</strong></td>
-                   	 		<td>Body Building <br/> 9:00 to 10:00 AM</td>
-                   	 		<td>Room No:210</td>
+                   	 		<td>Yoga<br/> 9:00 to 10:00 AM</td>                   	 		
                    	 	</tr>
                    	 	<tr>
                    	 		<td class="day">Thursday</td>
                    	 		<td><strong>9:00 AM</strong></td>
-                   	 		<td>Body Building <br/> 9:00 to 10:00 AM</td>
-                   	 		<td>Room No:210</td>
+                   	 		<td>Body Building <br/> 9:00 to 10:00 AM</td>                   	 		
                    	 	</tr>
                    	 	<tr>
                    	 		<td class="day">Friday</td>
                    	 		<td><strong>9:00 AM</strong></td>
-                   	 		<td>Body Building <br/> 9:00 to 10:00 AM</td>
-                   	 		<td>Room No:210</td>
+                   	 		<td>METCON<br/> 9:00 to 10:00 AM</td>                   	 		
                    	 	</tr>
                    	 	<tr>
                    	 		<td class="day">Saturday</td>
                    	 		<td><strong>9:00 AM</strong></td>
-                   	 		<td>Body Building <br/> 9:00 to 10:00 AM</td>
-                   	 		<td>Room No:210</td>
+                   	 		<td>Bulid Our Flagship<br/> 9:00 to 10:00 AM</td>                   	 		
                    	 	</tr>
                    	 </tbody>
                    </table>
@@ -287,86 +279,64 @@
   </section>
 <!-- End Schedule -->
 
-<!-- Start Gallery -->
-  <section class="gallery" id="gallery">
-  	 <h2>Workout Gallery</h2>
-  	<div class="content">
-  		 <div class="box wow slideInLeft">
-  		 	 <img src="images/gallery1.jpg" alt="gallery" />
-  		 </div>
-  		 <div class="box wow slideInRight">
-  		 	 <img src="images/gallery2.jpg" alt="gallery" />
-  		 </div>
-  		 <div class="box wow slideInLeft">
-  		 	 <img src="images/gallery3.jpg" alt="gallery" />
-  		 </div>
-  		 <div class="box wow slideInRight">
-  		 	 <img src="images/gallery4.jpg" alt="gallery" />
-  		 </div>
-  	</div>
-  </section>
-<!-- End Gallery -->
 
  <!-- Start Price -->
   <section class="price-package" id="price">
   	 <div class="container">
   	 	  <h2>Choose Your Package</h2>
-  	 	  <p class="title-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+  	 	  <p class="title-p">Our training packages have been designed to always give our maximum service to our customers. You can get our one month, three months, or annual membership with many additional benefits. All of these packages can be changed to suit your requirements.</p>
   	 	  <div class="content">
   	 	  	  <div class="box wow bounceInUp">
   	 	  	  	  <div class="inner">
   	 	  	  	  	   <div class="price-tag">
-  	 	  	  	  	   	  $59/Month
+								Rs.1,500
   	 	  	  	  	   </div>
   	 	  	  	  	   <div class="img">
   	 	  	  	  	   	 <img src="images/price1.jpg" alt="price" />
   	 	  	  	  	   </div>
   	 	  	  	  	   <div class="text">
-  	 	  	  	  	   	  <h3>Body Building Training</h3>
-  	 	  	  	  	   	  <p>Get Free WiFi</p>
-  	 	  	  	  	   	  <p>Month to Month</p>
-  	 	  	  	  	   	  <p>No Time Restrictions</p>
-  	 	  	  	  	   	  <p>Gym and Cardio</p>
-  	 	  	  	  	   	  <p>Service Locker Rooms</p>
-  	 	  	  	  	   	  <a href="" class="btn">Join Now</a>
+							<h3>One Month</h3>
+							<p>Weight Training and Cardio</p> 
+							<p>No Time Restrictions</p>
+							<p>Yoga Sessions</p>							
+							<p>Get Free WiFi</p>
+  	 	  	  	  	   	  <a href="#contact" class="btn">Join Now</a>
   	 	  	  	  	   </div>
   	 	  	  	  </div>
   	 	  	  </div>
   	 	  	  <div class="box wow bounceInUp" data-wow-delay="0.2s">
   	 	  	  	  <div class="inner">
   	 	  	  	  	   <div class="price-tag">
-  	 	  	  	  	   	  $69/Month
+								Rs.4,000
   	 	  	  	  	   </div>
   	 	  	  	  	   <div class="img">
   	 	  	  	  	   	 <img src="images/price2.jpg" alt="price" />
   	 	  	  	  	   </div>
   	 	  	  	  	   <div class="text">
-  	 	  	  	  	   	  <h3>Body Building Training</h3>
-  	 	  	  	  	   	  <p>Get Free WiFi</p>
-  	 	  	  	  	   	  <p>Month to Month</p>
-  	 	  	  	  	   	  <p>No Time Restrictions</p>
-  	 	  	  	  	   	  <p>Gym and Cardio</p>
-  	 	  	  	  	   	  <p>Service Locker Rooms</p>
-  	 	  	  	  	   	  <a href="" class="btn">Join Now</a>
+							<h3>Three Months</h3>
+							<p>Weight Training and Cardio</p> 
+							<p>Free meal plan</p>
+							<p>No Time Restrictions</p>
+							<p>Get Free WiFi</p>
+  	 	  	  	  	   	  <a href="#contact" class="btn">Join Now</a>
   	 	  	  	  	   </div>
   	 	  	  	  </div>
   	 	  	  </div>
   	 	  	  <div class="box wow bounceInUp" data-wow-delay="0.4s">
   	 	  	  	  <div class="inner">
   	 	  	  	  	   <div class="price-tag">
-  	 	  	  	  	   	  $99/Month
+  	 	  	  	  	   	  Rs.12,000
   	 	  	  	  	   </div>
   	 	  	  	  	   <div class="img">
   	 	  	  	  	   	 <img src="images/price3.jpg" alt="price" />
   	 	  	  	  	   </div>
   	 	  	  	  	   <div class="text">
-  	 	  	  	  	   	  <h3>Body Building Training</h3>
-  	 	  	  	  	   	  <p>Get Free WiFi</p>
-  	 	  	  	  	   	  <p>Month to Month</p>
-  	 	  	  	  	   	  <p>No Time Restrictions</p>
-  	 	  	  	  	   	  <p>Gym and Cardio</p>
-  	 	  	  	  	   	  <p>Service Locker Rooms</p>
-  	 	  	  	  	   	  <a href="" class="btn">Join Now</a>
+							<h3>One Year</h3>
+							<p>Weight Training and Cardio</p> 
+							<p>No Time Restrictions</p>
+							<p>Free online training memebership</p>
+							<p>Get Free WiFi</p>
+  	 	  	  	  	   	  <a href="#contact" class="btn">Join Now</a>
   	 	  	  	  	   </div>
   	 	  	  	  </div>
   	 	  	  </div>
@@ -397,12 +367,12 @@
             </div>
             <div class="box text wow slideInRight">
                  <h2>Get Connected with Gym</h2>
-                  <p class="title-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                  <p class="title-p"></p>
                   <div class="info">
                       <ul>
-                          <li><span class="fa fa-map-marker"></span> Gali no 11, House no 11, New Delhi</li>
-                          <li><span class="fa fa-phone"></span> 91 9999999999</li>
-                          <li><span class="fa fa-envelope"></span> info@gym.com</li>
+                          <li><span class="fa fa-map-marker"></span> No.196/A, Dalugama, Kelaniya.</li>
+                          <li><span class="fa fa-phone"></span> +94 112548741</li>
+                          <li><span class="fa fa-envelope"></span> info@fitorfight.com</li>
                       </ul>
                   </div>
                   <div class="social">
