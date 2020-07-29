@@ -187,6 +187,7 @@ a {
            
         </section>
         <div class="form-content">
+          <form method="POST" action="updateProfle.php">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
@@ -219,6 +220,7 @@ a {
                     </div><br/><br/>
                     <button type="button" class="btnSubmit">Submit</button>
                     <br/><br/>
+        </form>
                 </div>
   <!-- Start Home -->
 
