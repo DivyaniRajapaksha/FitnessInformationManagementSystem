@@ -1,3 +1,12 @@
+<?php
+    session_start();
+
+    if (isset($_SESSION['login_admin'])) {
+        //header("location: fittnessClub.php");
+    }else{
+        header("location: login.php");
+    }
+?>
 <?php include 'properties.php';?>
 
 <!DOCTYPE html>

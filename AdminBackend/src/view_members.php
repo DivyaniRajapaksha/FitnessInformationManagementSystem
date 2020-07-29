@@ -1,3 +1,12 @@
+<?php
+    session_start();
+
+    if (isset($_SESSION['login_admin'])) {
+        //header("location: fittnessClub.php");
+    }else{
+        header("location: login.php");
+    }
+?>
 <?php include 'properties.php';?>
 
 <!DOCTYPE html>
@@ -157,8 +166,8 @@
       <th scope="col" style="color:#ffff;">Plan</th>
       <th scope="col" style="color:#ffff;">Mobile No</th>
       <th scope="col" style="color:#ffff;">Email</th>
+      <th scope="col" style="color:#ffff;">Username</th>
       <th scope="col" style="color:#ffff;">Trainer ID</th>
-      <th scope="col" style="color:#ffff;">Update</th>
       <th scope="col" style="color:#ffff;">Delete</th>
     </tr>
   </thead>
@@ -178,8 +187,8 @@
         echo "<td>" . $row['plan'] . "</td>";
         echo "<td>" . $row['mobile'] . "</td>";
         echo "<td>" . $row['email'] . "</td>";
+        echo "<td>" . $row['username'] . "</td>";
         echo "<td>" . $row['trainer_id'] . "</td>";
-        echo '<td><input type="button" class="btn btn-success" name="Update" value="Update"></td>';
         echo '<td><input type="button" class="btn btn-danger" name="Delete" value="Delete"></td>';
         echo "</tr>";
         }

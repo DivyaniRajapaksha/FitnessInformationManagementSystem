@@ -6,6 +6,8 @@
         plan VARCHAR(30) NOT NULL,
         age INT,
         email VARCHAR(50),
+        username VARCHAR(50),
+        password VARCHAR(20),
         mobile INT,
         trainer_id VARCHAR(500)
         )";
@@ -15,8 +17,8 @@
         } else {
           echo "Error creating Requests table: " . $conn->error;
         }
-        $sql = "INSERT INTO  Member  (id,fname, plan, age,email, mobile, trainer_id)
-        VALUES ('".$_POST["id"]."','".$_POST["name"]."', '".$_POST["package"]."', ".$_POST["age"].", '".$_POST["email"]."',".$_POST["mobileno"].",'".$_POST["trainer_id"]."')";
+        $sql = "INSERT INTO  Member  (id,fname, plan, age,email, mobile,username ,password, trainer_id)
+        VALUES ('".$_POST["id"]."','".$_POST["name"]."', '".$_POST["package"]."', ".$_POST["age"].", '".$_POST["email"]."',".$_POST["mobileno"].",'".$_POST["username"]."','".$_POST["password"]."','".$_POST["trainer_id"]."')";
     
     if ($conn->query($sql) === TRUE) {
       echo "New record created successfully";

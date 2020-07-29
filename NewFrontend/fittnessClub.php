@@ -1,3 +1,7 @@
+<?php
+	session_start();
+	
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,6 +39,16 @@
  	 			<li><a href="#schedule">Schedule</a></li>
  	 			<li><a href="#price">Price</a></li>
  	 			<li><a href="#contact">Contact</a></li>
+				<li><a href="profile.php">Profile</a></li>
+				
+			<?php
+   				 
+
+    			if (isset($_SESSION['login_user'])) {
+					//echo "<li><a href="">Logout</a></li>";
+					echo '<li><a href="logOut.php">logout</a></li>';
+    			}
+			?>
  	 		</ul>
  	 	</div>
  	 </div>
