@@ -141,12 +141,16 @@
                                     <li>
                                         <a href="view_employee.php">View Employee</a>
                                     </li>
-                                    <li>
-                                        <a href="logOut.php">Log Out</a>
-                                    </li>
-                                   
+                                    
                                 </ul>
                             </div>
+                            
+                        </li>
+                        <li>
+                            <a href="logOut.php">
+                            <i class="fa fa-sign-out"></i>
+                            <span>Logout</span>
+                            </a>
                         </li>
                     </ul>
                 </div>
