@@ -6,6 +6,13 @@
 
 if ($conn->query($sql) === TRUE) {
   echo "Record updated successfully";
+  echo "<script>$(function(){  Swal.fire(
+    'Error!',
+    'Username and Password Invalid!',
+    'error'
+    ) });
+  
+    </script>";
 } else {
   echo "Error updating record: " . $conn->error;
 }

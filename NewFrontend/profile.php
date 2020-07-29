@@ -14,7 +14,7 @@
   $sql = "SELECT * FROM `member` WHERE username LIKE '".$username."'";
   $result = $conn->query($sql);
   if (mysqli_num_rows($result) > 0) {
-    // output data of each row
+    
     while($row = mysqli_fetch_assoc($result)) {
       //echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
       $_SESSION['id'] =  $row["id"];
@@ -187,10 +187,10 @@ a {
            
         </section>
         <div class="form-content">
-          <form method="POST" action="updateProfle.php">
-                    <div class="row">
+              
+                <div class="row">
                         <div class="col-md-6">
-                            <div class="form-group">
+                            <div class="form-group" >
                                 <label>Name:</label>
                                 <input type="text" class="form-control" placeholder="fname" value="<?php echo $_SESSION['fname']  ?>"/>
                             </div>
@@ -220,14 +220,20 @@ a {
                     </div><br/><br/>
                     <button type="button" class="btnSubmit">Submit</button>
                     <br/><br/>
-        </form>
+                   
                 </div>
+               
+                    
   <!-- Start Home -->
 
             
   <br/>
 
-
+  <?php
+if (isset($_POST['action'])) {
+    echo '<br />The ' . $_POST['submit'] . ' submit button was pressed<br />';
+}
+?>
                 
   <!-- End Home -->
   <!-- jquery -->
