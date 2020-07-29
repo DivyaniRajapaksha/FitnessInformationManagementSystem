@@ -169,9 +169,9 @@
       <th scope="col" style="color:#ffff;">NIC</th>
       <th scope="col" style="color:#ffff;">Email</th>
       <th scope="col" style="color:#ffff;">Mobile No</th>
+      <th scope="col" style="color:#ffff;">Designation</th>      
       <th scope="col" style="color:#ffff;">Password</th>     
-      <th scope="col" style="color:#ffff;">Update</th>
-      <th scope="col" style="color:#ffff;">Save</th>
+     
     </tr>
   </thead>
   <tbody>
@@ -193,11 +193,10 @@
         echo "<td>" . $row['nic'] . "</td>";
         echo "<td>" . $row['email'] . "</td>";
         echo "<td>" . $row['mobileNo'] . "</td>";
+        echo "<td>" . $row['designation'] . "</td>";
         echo "<td>" . $row['password'] . "</td>";
 
-        echo '<td><input type="button" class="btn btn-success" name="Update" value="Update"></td>';
-        echo '<td><input type="button" class="btn btn-danger" name="Save" value="Save"></td>';
-        echo "</tr>";
+        
         }
         } else {
               echo "0 results";

@@ -98,7 +98,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">View Member</a>
+                                        <a href="view_members.php">View Member</a>
                                     </li>
                                   
                                 </ul>
@@ -115,14 +115,14 @@
                                         <a href="add_branch.php">Add Branches</a>
                                     </li>
                                     <li>
-                                        <a href="#">View Branches</a>
+                                        <a href="view_branch.php">View Branches</a>
                                     </li>
                                     
                                 </ul>
                             </div>
                         </li>
                         <li class="sidebar-dropdown">
-                            <a href="#">
+                            <a href="view_request.php">
                                 <i class="fa fa-globe"></i>
                                 <span class="menu-text">Requests</span>
                                 <span class="badge badge-pill badge-warning">New</span>
@@ -136,10 +136,10 @@
                             <div class="sidebar-submenu">
                                 <ul>
                                     <li>
-                                        <a href="add_trainer.php">Add Employee</a>
+                                        <a href="add_employee.php">Add Employee</a>
                                     </li>
                                     <li>
-                                        <a href="#">View Employee</a>
+                                        <a href="view_employee.php">View Employee</a>
                                     </li>
                                    
                                 </ul>

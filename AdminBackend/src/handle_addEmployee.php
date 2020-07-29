@@ -15,6 +15,7 @@
         nic VARCHAR(30) NOT NULL,
         email VARCHAR(30) NOT NULL,
         mobileNo INT NOT NULL,
+        designation VARCHAR(30) NOT NULL,
         password VARCHAR(8) NOT NULL        
         )";
         
@@ -33,11 +34,12 @@
         $nic = $_POST['nic'];
         $email = $_POST['email'];
         $mobileno = $_POST['mobileno'];
+        $mobileno = $_POST['designation'];
         $password = $_POST['password'];
         $cpassword = $_POST['cpassword'];
 
-    $sql = "INSERT INTO `employee` (`id`, `name`, `street`, `lane`, `city`, `nic`, `email`, `mobileNo`, `password`) 
-    VALUES ('".$_POST["id"]."', '".$_POST["name"]."', '".$_POST["street"]."', '".$_POST["lane"]."', '".$_POST["city"]."', '".$_POST["nic"]."', '".$_POST["email"]."','".$_POST["mobileno"]."', '".$_POST["password"]."');";
+    $sql = "INSERT INTO `employee` (`id`, `name`, `street`, `lane`, `city`, `nic`, `email`, `mobileNo`, `designation`, `password`) 
+    VALUES ('".$_POST["id"]."', '".$_POST["name"]."', '".$_POST["street"]."', '".$_POST["lane"]."', '".$_POST["city"]."', '".$_POST["nic"]."', '".$_POST["email"]."','".$_POST["mobileno"]."', '".$_POST["designation"]."', '".$_POST["password"]."');";
 
     if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
