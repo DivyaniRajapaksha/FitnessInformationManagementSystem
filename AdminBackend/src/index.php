@@ -1,3 +1,12 @@
+<?php
+    session_start();
+
+    if (isset($_SESSION['login_admin'])) {
+        //header("location: fittnessClub.php");
+    }else{
+        header("location: login.php");
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -131,6 +140,9 @@
                                     </li>
                                     <li>
                                         <a href="view_employee.php">View Employee</a>
+                                    </li>
+                                    <li>
+                                        <a href="logOut.php">Log Out</a>
                                     </li>
                                    
                                 </ul>

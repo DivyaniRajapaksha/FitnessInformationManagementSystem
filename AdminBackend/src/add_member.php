@@ -1,3 +1,12 @@
+<?php
+    session_start();
+
+    if (isset($_SESSION['login_admin'])) {
+        //header("location: fittnessClub.php");
+    }else{
+        header("location: login.php");
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -158,6 +167,10 @@
 		                <input type="text" name="email" class="form-control">
 		                <label class="mt-3"><span style="color: #0065b3">Mobile NO</span></label>
 		                <input type="text" name="mobileno" class="form-control">
+                        <label class="mt-3"><span style="color: #0065b3">Username</span></label>
+		                <input type="text" name="username" class="form-control">
+                        <label class="mt-3"><span style="color: #0065b3">Password</span></label>
+		                <input type="text" name="password" class="form-control">
 		                <label class="mt-3"><span style="color: #0065b3">Trainer ID</span></label>
 		                <input type="text" name="trainer_id" class="form-control">
 		                <button class="btn btn-dark mt-3" type="submit" name="member">ADD</button>
