@@ -12,7 +12,7 @@ session_start();
     while($row = mysqli_fetch_assoc($result)) {
       //echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
       $_SESSION['login_admin'] =  $row["name"];
-      $_SESSION['login_designation'] =  $row["name"];
+      $_SESSION['login_designation'] =  $row["designation"];
       
     }
     header("location: index.php");

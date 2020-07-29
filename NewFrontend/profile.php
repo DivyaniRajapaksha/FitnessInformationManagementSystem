@@ -11,6 +11,7 @@
 <?php include 'properties.php';?>
 <?php
   $username=$_SESSION['login_user'];
+  // $designation=$_SESSION['login_designation'];
   $sql = "SELECT * FROM `member` WHERE username LIKE '".$username."'";
   $result = $conn->query($sql);
   if (mysqli_num_rows($result) > 0) {

@@ -34,7 +34,7 @@
         $nic = $_POST['nic'];
         $email = $_POST['email'];
         $mobileno = $_POST['mobileno'];
-        $mobileno = $_POST['designation'];
+        $designation = $_POST['designation'];
         $password = $_POST['password'];
         $cpassword = $_POST['cpassword'];
 

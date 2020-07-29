@@ -40,7 +40,7 @@
         <nav id="sidebar" class="sidebar-wrapper">
             <div class="sidebar-content">
                  <!-- sidebar-brand  -->
-                 <div class="sidebar-item sidebar-brand">
+                 <div class="sidebar-item sidebar-brand" style="text-align: left";>
                     <a href="#" ">Admin Dashboard </a>
                 </div>
                 <!-- sidebar-header  -->
@@ -52,7 +52,9 @@
                         <span class="user-name">
                             <strong><?php echo $_SESSION['login_admin']; ?></strong>
                         </span>
-                        <span class="user-role"><?php echo $_SESSION['login_designation']; ?></span>
+                        <span class="user-role">
+                            <?php echo $_SESSION['login_designation']; ?>
+                        </span>
                         <span class="user-status">
                             <i class="fa fa-circle"></i>
                             <span>Online</span>
@@ -74,7 +76,7 @@
                 <div class=" sidebar-item sidebar-menu">
                     <ul>
                         <li class="header-menu">
-                            <span style="color:#0065b3 ;">FitnessHub</span>
+                            <span style="color:#0065b3 ;">FitnessOrFight</span>
                         </li>
                         <li class="sidebar-dropdown">
                             <a href="#">
@@ -121,7 +123,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="sidebar-dropdown">
+                        <li>
                             <a href="view_request.php">
                                 <i class="fa fa-globe"></i>
                                 <span class="menu-text">Requests</span>

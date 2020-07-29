@@ -102,7 +102,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="view_member.php">View Member</a>
+                                        <a href="view_members.php">View Member</a>
                                     </li>
                                   
                                 </ul>
@@ -125,7 +125,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="sidebar-dropdown">
+                        <li>
                             <a href="view_request.php">
                                 <i class="fa fa-globe"></i>
                                 <span class="menu-text">Requests</span>
@@ -148,6 +148,12 @@
                                    
                                 </ul>
                             </div>
+                        </li>
+                        <li>
+                            <a href="logOut.php">
+                            <i class="fa fa-power-off"></i>
+                            <span>Logout</span>
+                            </a>
                         </li>
                     </ul>
                 </div>
