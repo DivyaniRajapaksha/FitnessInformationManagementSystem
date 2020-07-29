@@ -161,7 +161,7 @@
                 <table class="table">
   <thead style="Background-color:#0065b3;">
     <tr>
-      <th scope="col" style="color:#ffff;">RequestID</th>
+      <th scope="col" style="color:#ffff;" >Request ID</th>
       <th scope="col" style="color:#ffff;">Name</th>
       <th scope="col" style="color:#ffff;">Email</th>
       <th scope="col" style="color:#ffff;">Mobile No</th>

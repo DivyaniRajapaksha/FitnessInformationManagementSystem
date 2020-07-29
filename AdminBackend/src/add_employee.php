@@ -169,6 +169,12 @@
                         <input type="email" name="email" id="email" class="form-control" pattern=".+@gmail.com" size="30" placeholder="youremail@gmail.com" required>
 		                <label class="mt-3"><span style="color: #0065b3">Contact Number</span></label>
                         <input type="tel" name="mobileno" class="form-control" pattern="[0-9]{10}" maxlength="11" placeholder="0778541236" required>
+                        <label class="mt-3"><span style="color: #0065b3">Designation</span></label><br>
+                        <select name="designation" class="form-control">
+                            <option value="null" class="form-control" disabled selected>Select Your Designation</option>
+                            <option value="Admin" class="form-control">Admin</option>
+                            <option value="Trainer"class="form-control">Trainer</option>                            
+                        </select>
                         <label class="mt-3"><span style="color: #0065b3">Password</span></label>
                         <input type="password" name='password' class="form-control" placeholder="Enter a Password" required>
                         <label class="mt-3"><span style="color: #0065b3">Confirm Password</span></label>
