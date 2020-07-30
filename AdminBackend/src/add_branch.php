@@ -76,7 +76,7 @@
                 <div class=" sidebar-item sidebar-menu">
                     <ul>
                         <li class="header-menu">
-                            <span style="color:#0065b3 ;">FitnessHub</span>
+                            <span style="color:#0065b3 ;">FitOrFight</span>
                         </li>
                         <li class="sidebar-dropdown">
                             <a href="index.php">

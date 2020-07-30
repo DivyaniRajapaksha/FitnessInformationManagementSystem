@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap');
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 body{
 	margin:0;
@@ -12,7 +13,8 @@ body{
 	box-sizing: border-box;
 	margin:0;
 	padding:0;
-	font-family: 'Oswald', sans-serif;
+	/* font-family: 'Oswald', sans-serif; */
+	font-family: 'Open Sans', sans-serif;
 }
 
 /*Header*/
@@ -242,109 +244,6 @@ header .ham-burger.active span:nth-child(2){
 	margin:0;
 	font-family: 'Open Sans', sans-serif;
 }
-
-
-/*Service Section*/
-.service{
-	padding:80px 0px;
-	background-color: #0065b3;
-}
-
-.service .content{
-	-webkit-display:flex;
-	display:flex;
-}
-
-.service .content .box{
-	flex:0 0 50%;
-	max-width: 50%;
-	padding:15px;
-}
-
-.service .content .text h2{
-	font-size: 30px;
-	font-weight: 500;
-	color:#ffffff;
-	padding:0px 0px 20px;
-}
-
-.service .content .text p{
-    font-size: 15px;
-	line-height:20px;
-	color:#ffffff;
-	margin:0;
-	padding:0px 0px 20px;
-	font-family: 'Open Sans', sans-serif;
-}
-
-.service .content .text .btn{
-	padding:8px 30px;
-	background-color: #222222;
-	color:#ffffff;
-	text-decoration: none;
-	display: inline-block;
-	border:1px solid transparent;
-	cursor: pointer;
-	-webkit-transition: all .5s ease;
-	transition: all .5s ease;
-}
-
-.service .content .text .btn:hover{
-	border:1px solid #ffffff;
-	color:#ffffff;
-	background-color: transparent;
-}
-.service .content .accordian-container{
-	margin-bottom: 5px;
-}
-.service .content .accordian-container .head{
-	background-color:rgba(0,0,0,0.2);
-	position: relative;
-	padding:12px 15px;
-	cursor: pointer;
-}
-.service .content .accordian-container .head .fa{
-	position: absolute;
-	right: 10px;
-	top:13px;
-	color:#ffffff;
-	height:30px;
-	width: 30px;
-	text-align: center;
-	line-height: 30px;
-	color:#ffffff;
-	border-radius: 50%;
-}
-.service .content .accordian-container .head h4{
-  font-size: 20px;
-  margin:0;
-  padding:0;
-  font-weight: 500;
-  color: #ffffff;
-  text-transform: capitalize;
-}
-.service .content .accordian-container.active .head{
-  background-color: #222222;	
-}
-.service .content .accordian-container .body{
-	display: none;
-	padding:15px;
-	background-color: #222222;
-	border-top:1px solid #333333;
-}
-
-.service .content .accordian-container:nth-child(1) .body{
-	display: block;
-}
-.service .content .accordian-container .body p{
-    font-size: 15px;
-	line-height:20px;
-	color:#ffffff;
-	margin:0;
-	padding:0;
-	font-family: 'Open Sans', sans-serif;	
-}
-
 
 /*Classes Section*/
 
@@ -588,41 +487,6 @@ header .ham-burger.active span:nth-child(2){
 	border-color:transparent;
 }
 
-
-/*Gallery Section*/
-
-.gallery .content{
-	-webkit-display: flex;
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.gallery .content .box{
-	flex:0 0 50%;
-	max-width: 50%;	
-}
-.gallery .content .box img{
-	display: block;
-	width: 100%;
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
-	-webkit-transition: all .5s ease;
-	transition: all .5s ease;
-}
-.gallery .content .box img:hover{
-	-webkit-filter: grayscale(0%);
-	filter: grayscale(0%);
-}
-
-.gallery h2{
-	font-size: 30px;
-    font-weight: 500;
-    color: #000000;
-    padding: 0px 0px 20px;
-    text-align: center;
-}
-
-
 /*Price Section*/
 
 .price-package{
@@ -697,7 +561,9 @@ header .ham-burger.active span:nth-child(2){
     cursor: pointer;
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
-    margin-top: 10px;
+	margin-top: 10px;
+	border-radius: 5px;
+	font-size: 15px;
 }
 .price-package .content .box .inner .text .btn:hover{
 	border-color:#222222;
@@ -739,7 +605,8 @@ header .ham-burger.active span:nth-child(2){
 }
 
 .contact .content .form input,
-.contact .content .form textarea{
+.contact .content .form textarea,
+.contact .content .form select {
  height: 45px;
  width: 100%;
  padding:6px 12px;
@@ -748,6 +615,7 @@ header .ham-burger.active span:nth-child(2){
  border:1px solid #ffffff;
  font-family: 'Open-sans',sans-serif;
  color:#ffffff;
+ border-radius: 6px;
 }
 .contact .content .form input:focus,
 .contact .content .form textarea:focus{
@@ -755,7 +623,7 @@ header .ham-burger.active span:nth-child(2){
 }
 .contact .content .form input::placeholder,
 .contact .content .form textarea::placeholder{
-	color:#ffffff;
+	color: lightgrey;
 }
 .contact .content .form textarea{
 	height: 100px;
@@ -805,7 +673,7 @@ header .ham-burger.active span:nth-child(2){
 	display: block;
 	margin-bottom: 15px;
 	color:#ffffff;
-	font-size: 15px;
+	font-size: 13px;
 	letter-spacing: 1px;
 	position: relative;
 	padding-left: 40px;
@@ -827,17 +695,19 @@ header .ham-burger.active span:nth-child(2){
 	width: 40px;
 	line-height: 40px;
 	text-align: center;
-	background-color: #0065b3;
+	background-color: #c11325;
     text-decoration: none;	
     display: inline-block;
     margin-right: 10px;
     transition: all .5s ease;
-    border:1px solid transparent;
+	border:1px solid transparent;
+	border-radius: 8px;
 } 
 
 .contact .content .text .social a:hover{
 	background-color: transparent;
-    border-color: #ffffff;
+	border-color: #ffffff;
+	
 }
 
 .contact .content .text .social a span{
@@ -850,7 +720,7 @@ header .ham-burger.active span:nth-child(2){
 	margin-top: 30px;
 	padding-top: 20px;
 	color:#c5c5c5;
-	font-size: 15px;
+	font-size: 12px;
 }
 
 

@@ -74,7 +74,7 @@
                 <div class=" sidebar-item sidebar-menu">
                     <ul>
                         <li class="header-menu">
-                            <span style="color:#0065b3 ;">FitnessHub</span>
+                            <span style="color:#0065b3 ;">FitOrFight</span>
                         </li>
                         <li class="sidebar-dropdown">
                             <a href="index.php">
@@ -166,12 +166,17 @@
 		                <label class="mt-3"><span style="color: #0065b3">Member Name</span></label>
 		                <input type="text" name="name" class="form-control">
 		                <label class="mt-3"><span style="color: #0065b3">Age</span></label>
-		                <input type="text" name="age" class="form-control">
-		                <label class="mt-3"><span style="color: #0065b3">Package</span></label>
-		                <input type="text" name="package" class="form-control">
+                        <input type="text" name="age" class="form-control">
+                        <label class="mt-3"><span style="color: #0065b3">Package</span></label>
+                        <select name="package" class="form-control">
+                            <option value="null" class="form-control" disabled selected>Select Your Package</option>
+                            <option value="one month" class="form-control">One Month</option>
+                            <option value="three month"class="form-control">Three Month</option>
+                            <option value="one year"class="form-control">One Year</option>                            
+                        </select>
                         <label class="mt-3"><span style="color: #0065b3">Email</span></label>
 		                <input type="text" name="email" class="form-control">
-		                <label class="mt-3"><span style="color: #0065b3">Mobile NO</span></label>
+		                <label class="mt-3"><span style="color: #0065b3">Mobile No</span></label>
 		                <input type="text" name="mobileno" class="form-control">
                         <label class="mt-3"><span style="color: #0065b3">Username</span></label>
 		                <input type="text" name="username" class="form-control">

@@ -24,7 +24,7 @@
  <header>
  	 <div class="container">
  	 	<div class="logo">
- 	 		 <a href="">Fitness <span>HUB</span></a>
+ 	 		 <a href="">Fit<span>OR</span>Fight</a>
  	 	</div>
  	 	<a href="javascript:void(0)" class="ham-burger">
  	       <span></span>	
@@ -34,7 +34,6 @@
  	 		<ul>
  	 			<li><a href="#home">Home</a></li>
  	 			<li><a href="#about">About</a></li>
- 	 			<li><a href="#service">Services</a></li>
  	 			<li><a href="#classes">Classes</a></li>
  	 			<li><a href="#schedule">Schedule</a></li>
  	 			<li><a href="#price">Price</a></li>
@@ -46,7 +45,7 @@
 
     			if (isset($_SESSION['login_user'])) {
 					//echo "<li><a href="">Logout</a></li>";
-					echo '<li><a href="logOut.php">logout</a></li>';
+					echo '<li><a href="logOut.php">Logout</a></li>';
     			}
 			?>
  	 		</ul>
@@ -92,8 +91,8 @@
   	  	  	   	   	   	  <img src="images/about2.jpg" alt="about" />
   	  	  	   	   	   </div>
                        <div class="text">
-                       	   <h4>Best Training</h4>
-                       	   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                       	   <h4>A Personalized Plan</h4>
+                       	   <p>We will develop a personalized fitness strategy tailored to your specific needs</p>
                        </div>
   	  	  	   	   </div>
   	  	  	   </div>
@@ -103,8 +102,8 @@
   	  	  	   	   	   	  <img src="images/about3.jpg" alt="about" />
   	  	  	   	   	   </div>
                        <div class="text">
-                       	   <h4>Build Perfect Body</h4>
-                       	   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                       	   <h4>Support and Motivation</h4>
+                       	   <p>Our trainers will be by your side for every workout - and keep you focused on becoming your best self</p>
                        </div>
   	  	  	   	   </div>
   	  	  	   </div>
@@ -112,60 +111,6 @@
   	  </div>
   </section>
  <!-- End About -->
-
-
- <!-- Start Service -->
- <section class="service" id="service">
- 	<div class="container">
- 		 <div class="content">
- 		 	  <div class="text box wow slideInLeft">
-                  <h2>Services</h2>
-                  <p>ABC. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
-                  <a href="" class="btn">Start Now</a>
- 		 	  </div>
- 		 	  <div class="accordian box wow slideInRight">
- 		 	  	    <div class="accordian-container active">
- 		 	  	    	<div class="head">
- 		 	  	    		<h4>Cardiovascular Equipment</h4>
- 		 	  	    		<span class="fa fa-angle-down"></span>
- 		 	  	    	</div>
- 		 	  	    	<div class="body">
- 		 	  	    		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
- 		 	  	    	</div>
- 		 	  	    </div>
- 		 	  	    <div class="accordian-container">
- 		 	  	    	<div class="head">
- 		 	  	    		<h4>Strength Training Equipment</h4>
- 		 	  	    		<span class="fa fa-angle-up"></span>
- 		 	  	    	</div>
- 		 	  	    	<div class="body">
- 		 	  	    		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
- 		 	  	    	</div>
- 		 	  	    </div>
- 		 	  	    <div class="accordian-container">
- 		 	  	    	<div class="head">
- 		 	  	    		<h4>Group Fitness Class</h4>
- 		 	  	    		<span class="fa fa-angle-up"></span>
- 		 	  	    	</div>
- 		 	  	    	<div class="body">
- 		 	  	    		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
- 		 	  	    	</div>
- 		 	  	    </div>
- 		 	  	    <div class="accordian-container">
- 		 	  	    	<div class="head">
- 		 	  	    		<h4>Other Services</h4>
- 		 	  	    		<span class="fa fa-angle-up"></span>
- 		 	  	    	</div>
- 		 	  	    	<div class="body">
- 		 	  	    		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
- 		 	  	    	</div>
- 		 	  	    </div>
- 		 	  </div>
- 		 </div>
- 	</div>
- </section>
- <!-- End Service -->
 
 <!-- Start Classes -->
 <section class="classes" id="classes">
@@ -218,7 +163,7 @@
  		 	  <div class="box text wow slideInLeft">
  		 	  	 <h2>Start Your Training Today</h2>
  		 	  	 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
- 		 	  	 <a href="" class="btn">Start Now</a>
+ 		 	  	 <a href="#contact" class="btn">Start Now</a>
  		 	  </div>
  		 	  <div class="box img wow slideInRight">
  		 	  	 <img src="images/gallery4.jpg" alt="start today" />
@@ -235,7 +180,7 @@
   	 	  <div class="content">
   	 	  	   <div class="box text wow slideInLeft">
   	 	  	   	   <h2>Classes Schedule</h2>
-						   <p style="text-align: left";>You can book by sending us an email or dropping a text via WhatsApp +94 (0)771234567</p> 	 	  	   	   
+						   <p style="float:left;">You can book by sending us an email or dropping a text via WhatsApp<br> +94 771234567</p> 	 	  	   	   
   	 	  	   	   <img src="images/schedule1.png" alt="schedule" />
   	 	  	   </div>
   	 	  	   <div class="box timing wow slideInRight">
@@ -355,14 +300,13 @@
                   <input type="text" placeholder="Enter Email" name="email">
 				  <input type="text" placeholder="Enter Mobile" name="mobile">
 				  <select name="package">
-				  <option style="color:gray" value="null" disabled selected>Select Your Plan</option>
+				  <option style="color:gray;" value="null"  disabled selected>Select Your Plan</option>
   					<option value="Monthly">Monthly Plan</option>
  					<option value="Three">Three Months Plan </option>
-  					<option value="Six">Six Months Plan</option>
   					<option value="Annual">Annual Plan</option>
 				</select>
                   <textarea placeholder="Enter Message If you have Any" name="message"></textarea>
-                  <button type="submit">Send Message</button>
+                  <button type="submit" style="border-radius:12px;">Send Request</button>
                </form>
             </div>
             <div class="box text wow slideInRight">
@@ -370,7 +314,7 @@
                   <p class="title-p"></p>
                   <div class="info">
                       <ul>
-                          <li><span class="fa fa-map-marker"></span> No.196/A, Dalugama, Kelaniya.</li>
+                          <li><span class="fa fa-map-marker" ></span> No.196/A, Dalugama, Kelaniya.</li>
                           <li><span class="fa fa-phone"></span> +94 112548741</li>
                           <li><span class="fa fa-envelope"></span> info@fitorfight.com</li>
                       </ul>
