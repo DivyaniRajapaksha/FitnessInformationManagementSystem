@@ -24,7 +24,7 @@
  <header>
  	 <div class="container">
  	 	<div class="logo">
- 	 		 <a href="">Fit<span>OR</span>Fight</a>
+ 	 		 <a href="">Fit<span>OR</span>Fight<span> |</span><span style="font-size: 20px;"> Health & Fitness Center</span></a>
  	 	</div>
  	 	<a href="javascript:void(0)" class="ham-burger">
  	       <span></span>	
@@ -92,7 +92,9 @@
   	  	  	   	   	   </div>
                        <div class="text">
                        	   <h4>A Personalized Plan</h4>
-                       	   <p>We will develop a personalized fitness strategy tailored to your specific needs</p>
+							  <p>We will develop a personalized fitness strategy tailored to your specific needs and will provide frequent engagement                    
+								<br><br>
+							  </p>
                        </div>
   	  	  	   	   </div>
   	  	  	   </div>
@@ -103,7 +105,7 @@
   	  	  	   	   	   </div>
                        <div class="text">
                        	   <h4>Support and Motivation</h4>
-                       	   <p>Our trainers will be by your side for every workout - and keep you focused on becoming your best self</p>
+                       	   <p>Our trainers will be by your side for every workout - and keep you focused on becoming your best self<br><br></p>
                        </div>
   	  	  	   	   </div>
   	  	  	   </div>
@@ -125,7 +127,7 @@
 		 	  	<div class="class-items">
 		 	  	 <div class="item wow bounceInUp">
                      <div class="item-img">
-                     	 <img src="images/class1.jpg" alt="classes" />
+                     	 <img src="images/images/class1.jpg" alt="classes"/>
                      	 <div class="price">
                      	 	 $99
                      	 </div>
