@@ -53,10 +53,10 @@
                         <img class="img-responsive img-rounded" src="img/user.jpg" alt="User picture">
                     </div>
                     <div class="user-info">
-                        <span class="user-name">Jhon
-                            <strong>Smith</strong>
+                        <span class="user-name">
+                            <strong><?php echo $_SESSION['login_admin']; ?></strong>
                         </span>
-                        <span class="user-role">Administrator</span>
+                        <span class="user-role"> <?php echo $_SESSION['login_designation']; ?></span>
                         <span class="user-status">
                             <i class="fa fa-circle"></i>
                             <span>Online</span>
@@ -78,7 +78,7 @@
                 <div class=" sidebar-item sidebar-menu">
                     <ul>
                         <li class="header-menu">
-                            <span style="color:#0065b3 ;">FitnessHub</span>
+                            <span style="color:#0065b3 ;">FitOrFight</span>
                         </li>
                         <li class="sidebar-dropdown">
                             <a href="index.php">
@@ -102,7 +102,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="view_member.php">View Member</a>
+                                        <a href="view_members.php">View Member</a>
                                     </li>
                                   
                                 </ul>
