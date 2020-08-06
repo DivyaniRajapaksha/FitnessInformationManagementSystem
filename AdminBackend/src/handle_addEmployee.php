@@ -52,7 +52,7 @@
         
         </script>";
         // sleep(3);
-        //header("location: fittnessClub.php");
+        header("location: index.php");
         
     
     } else {

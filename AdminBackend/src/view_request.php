@@ -192,11 +192,12 @@
         echo "<td>" . $row['id'] . "</td>";
         echo "<td>" . $row['fname'] . "</td>";
         echo "<td>" . $row['email'] . "</td>";
+        $image= $row['email'] ;
         echo "<td>" . $row['mobile'] . "</td>";
         echo "<td>" . $row['plan'] . "</td>";
         echo "<td>" . $row['reg_date'] . "</td>";
         echo "<td>" . $row['description'] . "</td>";
-        echo '<td><input type="button" class="btn btn-success" name="Accept" value="Accept"></td>';
+        echo '<td><input type="button" class="btn btn-success" name="Accept" value="Accept" onclick="myFUnction(\''.$image.'\');"></td>';
         echo '<td><input type="button" class="btn btn-danger" name="Cancel" value="Cancel"></td>';
         echo "</tr>";
         }
@@ -207,17 +208,29 @@
   </tbody>
   
 </table>
+ 
+</div>
+            <!--</div>-->
+        </main>
+        <!-- page-content" -->
+    </div>
+<script>
+    function myFUnction(abc) {
+        console.log("HI");
+        console.log(abc);
+        document.write("<?php echo abc; ?>");
 
-        <?php
-        if(isset($_POST['Accept'])) { 
-            echo "This is Button1 that is selected"; 
-            $to = "fashionstoregtsd@gmail.com";
+    }
+    <?php
+        echo $_SESSION['email'];
+           
+            $to = $_SESSION['email'];
             $subject = "Request Confirmation";
     
           
             $message = '<html><body>';
             $message .= '<h1 style="color:#0065b3;">Fitness Hub Pvt(LTD) has accepted your request!</h1>';
-            $message .= '<p style="color:	#000000;font-size:18px;">Happy to announce you as a FitnessHub Member!Here are the Credentials to your account:</p>';
+            $message .= '<p style="color:   #000000;font-size:18px;">Happy to announce you as a FitnessHub Member!Here are the Credentials to your account:</p>';
             $message .= '<table>
             <tr>
                 <th>Username</th>
@@ -240,14 +253,13 @@
         $headers .= 'Cc: myboss@example.com' . "\r\n";
     
         mail($to,$subject,$message,$headers);
-        }
+       
        
         ?>
-                </div>
-            <!--</div>-->
-        </main>
-        <!-- page-content" -->
-    </div>
+
+</script>
+
+       
       
     <!-- page-wrapper -->
 
