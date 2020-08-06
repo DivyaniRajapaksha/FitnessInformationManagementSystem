@@ -193,9 +193,12 @@
         echo "<td>" . $row['plan'] . "</td>";
         echo "<td>" . $row['mobile'] . "</td>";
         echo "<td>" . $row['email'] . "</td>";
+        $image=$row['email'];
         echo "<td>" . $row['username'] . "</td>";
         echo "<td>" . $row['trainer_id'] . "</td>";
-        echo '<td><input type="button" class="btn btn-danger" name="Delete" value="Delete"></td>';
+        echo ' <form action="deleteMember.php" method="post" >';
+        echo ' <td><button class="btn btn-danger" name="deleteMail" value="' . $image . '">Cancel</button></td>';
+        echo ' </form>';
         echo "</tr>";
         }
         } else {

@@ -197,8 +197,14 @@
         echo "<td>" . $row['plan'] . "</td>";
         echo "<td>" . $row['reg_date'] . "</td>";
         echo "<td>" . $row['description'] . "</td>";
-        echo '<td><input type="button" class="btn btn-success" name="Accept" value="Accept" onclick="myFUnction(\''.$image.'\');"></td>';
-        echo '<td><input type="button" class="btn btn-danger" name="Cancel" value="Cancel"></td>';
+        echo ' <form action="mail.php" method="post" >';
+        echo ' <td><button class="btn btn-success" name="email" value="' . $image . '">Accept</button></td>';
+        echo ' </form>';
+        echo ' <form action="delete.php" method="post" >';
+        echo ' <td><button class="btn btn-danger" name="deleteMail" value="' . $image . '">Cancel</button></td>';
+        echo ' </form>';
+
+        
         echo "</tr>";
         }
         } else {
@@ -214,51 +220,8 @@
         </main>
         <!-- page-content" -->
     </div>
-<script>
-    function myFUnction(abc) {
-        console.log("HI");
-        console.log(abc);
-        document.write("<?php echo abc; ?>");
-
-    }
-    <?php
-        echo $_SESSION['email'];
-           
-            $to = $_SESSION['email'];
-            $subject = "Request Confirmation";
     
-          
-            $message = '<html><body>';
-            $message .= '<h1 style="color:#0065b3;">Fitness Hub Pvt(LTD) has accepted your request!</h1>';
-            $message .= '<p style="color:   #000000;font-size:18px;">Happy to announce you as a FitnessHub Member!Here are the Credentials to your account:</p>';
-            $message .= '<table>
-            <tr>
-                <th>Username</th>
-                <th>Password</th>
-            </tr>
-            <tr>
-                <td>dd@gmail.com</td>
-                 <td>dd123*</td>
-             </tr>       
-        </table><br/>';
-            $message .= '<button style="color:#ffff;background:  #008CBA;border: none; padding: 15px 32px; font-size: 14px;display: inline-block;border-radius: 4px;">VIew Invitation</button>';
-            $message .= '</body></html>';
-    
-        // Always set content-type when sending HTML email
-        $headers = "MIME-Version: 1.0" . "\r\n";
-        $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-    
-        // More headers
-        $headers .= 'From: <webmaster@example.com>' . "\r\n";
-        $headers .= 'Cc: myboss@example.com' . "\r\n";
-    
-        mail($to,$subject,$message,$headers);
-       
-       
-        ?>
-
-</script>
-
+   
        
       
     <!-- page-wrapper -->
@@ -281,6 +244,29 @@
 
 
     <script src="js/main.js"></script>
+    <script>
+        
+        function myFunction() {
+           var x = document.getElementById("Accept").value;
+          alert(x);
+          jQuery.ajax({
+             type: "POST",
+            url: 'mail.php',
+             dataType: 'json',
+              data: {functionname: 'writeMsg', arguments: [x]},
+
+             success: function (obj, textstatus) {
+                  if( !('error' in obj) ) {
+                      yourVariable = obj.result;
+                  }
+                  else {
+                      console.log(obj.error);
+                  }
+            }
+});
+         
+        }
+    </script>
 </body>
 
 </html>
