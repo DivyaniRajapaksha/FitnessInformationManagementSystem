@@ -38,7 +38,7 @@ if ($conn->query($sql) === TRUE) {
     
       </script>";
      // sleep(3);
-      //header("location: fittnessClub.php");
+      header("location: fittnessClub.php");
     
    
 } else {

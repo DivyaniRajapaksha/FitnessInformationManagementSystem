@@ -191,39 +191,43 @@ a {
               
                 <div class="row">
                         <div class="col-md-6">
+                        
                             <div class="form-group" >
+                            <form  method="post" action="updateProfle.php">
                                 <label>Name:</label>
-                                <input type="text" class="form-control" placeholder="fname" value="<?php echo $_SESSION['fname']  ?>"/>
+                                <input type="text" class="form-control" name="fname" placeholder="fname" value="<?php echo $_SESSION['fname']  ?>"/>
                             </div>
                             <div class="form-group">
                             <label>Plan:</label>
-                                <input type="text" class="form-control" placeholder="plan" value="<?php echo $_SESSION['plan']  ?>" readOnly/>
+                                <input type="text" class="form-control" name="plan" placeholder="plan" value="<?php echo $_SESSION['plan']  ?>" readOnly/>
                             </div>
                             <div class="form-group">
                             <label>Username:</label>
-                                <input type="text" class="form-control" placeholder="username" value="<?php echo $_SESSION['username']  ?>"/>
+                                <input type="text" class="form-control" name="username" placeholder="username" value="<?php echo $_SESSION['username']  ?>"/>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                             <label>Mobile Number:</label>
-                                <input type="text" class="form-control" placeholder="mobile" value="<?php echo $_SESSION['mobile']  ?>"/>
+                                <input type="text" class="form-control" name="mobile" placeholder="mobile" value="<?php echo $_SESSION['mobile']  ?>" readOnly/>
                             </div>
                             <div class="form-group">
                             <label>Email:</label>
-                                <input type="text" class="form-control" placeholder="email" value="<?php echo $_SESSION['email']  ?>"/>
+                                <input type="text" class="form-control" name="email" placeholder="email" value="<?php echo $_SESSION['email']  ?>" readOnly/>
                             </div>
                             <div class="form-group">
                             <label>Trainer:</label>
-                                <input type="text" class="form-control" placeholder="trainer_id" value="<?php echo $_SESSION['trainer_id']  ?>" readOnly/>
+                                <input type="text" class="form-control" name="trainer_id" placeholder="trainer_id" value="<?php echo $_SESSION['trainer_id']  ?>" readOnly/>
                             </div>
                         </div>
                     </div><br/><br/>
-                    <button type="button" class="btnSubmit">Submit</button>
+                    <div  class="d-flex justify-content-center mt-3 login_container">
+						        <input type="submit" class="btn btn-primary" value="Update" class="btn float-right font-weight-bold login_btn ">
+					    </div>
+				</form>
                     <br/><br/>
-                   
-                </div>
-               
+                  
+               </div></div>
                     
   <!-- Start Home -->
 
