@@ -127,7 +127,7 @@
 		 	  	<div class="class-items">
 		 	  	 <div class="item wow bounceInUp">
                      <div class="item-img">
-                     	 <img src="images/images/class1.jpg" alt="classes"/>
+                     	 <img src="images/class1.jpg" alt="classes"/>
                      	 <div class="price">
                      	 	 $99
                      	 </div>
