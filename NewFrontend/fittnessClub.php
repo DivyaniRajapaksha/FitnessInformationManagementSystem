@@ -145,7 +145,7 @@
                      	  
                      </div>
                      <div class="item-img">
-                     	 <img src="images/class1.jpg" alt="classes" />
+                     	 <img src="images/class3.jpg" alt="classes" />
                      	 <div class="price">
                      	 	 Rs.3,250
                      	 </div>
