@@ -318,7 +318,7 @@ header .ham-burger.active span:nth-child(2){
 .classes .content .class-items .item .item-img .price{
 	position: absolute;
 	height: 50px;
-	width: 60px;
+	width: 100px;
 	font-size:20px;
 	font-weight: 500; 
 	color:#ffffff;
@@ -326,12 +326,12 @@ header .ham-burger.active span:nth-child(2){
 	line-height: 50px;
 }
 .classes .content .class-items .item:nth-child(1) .item-img .price{
- background-color: #4D6D9A;
+ background-color: #B23850;
  left:0;
  top:0;
 }
 .classes .content .class-items .item:nth-child(2) .item-img .price{
- background-color: #222222;
+ background-color: #B23850;
  right:0;
  top:0;
 }
@@ -421,8 +421,8 @@ header .ham-burger.active span:nth-child(2){
 
 .start-today .content .text .btn:hover{
 	color:#ffffff;
-	border-color: #ffffff;
-	background-color: transparent;
+	border-color: none;
+	background-color: #116466;
 }
 
 
@@ -467,10 +467,11 @@ header .ham-burger.active span:nth-child(2){
 .schedule .content .timing .table{
 	width: 100%;
 	border-collapse: collapse;
+	background-color: #D1E8E2;
 }
 
 .schedule .content .timing .table td{
-	border:1px solid #dfdfdf;
+	border:1px solid lightgrey;
 	padding: 8px;
 	font-size: 15px;
 	text-align: center;

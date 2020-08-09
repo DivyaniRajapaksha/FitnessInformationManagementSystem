@@ -57,8 +57,8 @@
   <!-- Start Home -->
   <section class="home wow flash" id="home">
   	 <div class="container">
-  	 	  <h1 class="wow slideInLeft" data-wow-delay="1s">It's <span>gym</span> time. Let's go</h1>
-  	 	  <h1 class="wow slideInRight" data-wow-delay="1s">We are ready to <span>fit you</span></h1>
+  	 	  <h1 class="wow slideInLeft" data-wow-delay="1s">It's <span>gym</span> time. Let's go.</h1>
+  	 	  <h1 class="wow slideInRight" data-wow-delay="1s">We are ready to <span>fit you.</span></h1>
   	 </div>
   	  <!-- go down -->
   	      <a href="#about" class="go-down">
@@ -129,7 +129,7 @@
                      <div class="item-img">
                      	 <img src="images/class1.jpg" alt="classes"/>
                      	 <div class="price">
-                     	 	 $99
+                     	 	 Rs.2,500
                      	 </div>
                      </div>
                      <div class="item-text">
@@ -147,7 +147,7 @@
                      <div class="item-img">
                      	 <img src="images/class1.jpg" alt="classes" />
                      	 <div class="price">
-                     	 	 $99
+                     	 	 Rs.3,250
                      	 </div>
                      </div>
 		 	  	 </div>
@@ -163,12 +163,12 @@
  	<div class="container">
  		 <div class="content">
  		 	  <div class="box text wow slideInLeft">
- 		 	  	 <h2>Start Your Training Today</h2>
- 		 	  	 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+ 		 	  	 <h2>Start Your Training Today!</h2>
+					 
  		 	  	 <a href="#contact" class="btn">Start Now</a>
  		 	  </div>
  		 	  <div class="box img wow slideInRight">
- 		 	  	 <img src="images/gallery4.jpg" alt="start today" />
+ 		 	  	 <img src="images/gallery5.jpg" alt="start today" />
  		 	  </div>
 
  		 </div>
@@ -239,7 +239,7 @@
 								Rs.1,500
   	 	  	  	  	   </div>
   	 	  	  	  	   <div class="img">
-  	 	  	  	  	   	 <img src="images/price1.jpg" alt="price" />
+  	 	  	  	  	   	 <img src="images/images/price1.jpg" alt="price" />
   	 	  	  	  	   </div>
   	 	  	  	  	   <div class="text">
 							<h3>One Month</h3>
