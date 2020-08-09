@@ -239,7 +239,7 @@
 								Rs.1,500
   	 	  	  	  	   </div>
   	 	  	  	  	   <div class="img">
-  	 	  	  	  	   	 <img src="images/images/price1.jpg" alt="price" />
+  	 	  	  	  	   	 <img src="images/price1.jpg" alt="price" />
   	 	  	  	  	   </div>
   	 	  	  	  	   <div class="text">
 							<h3>One Month</h3>
